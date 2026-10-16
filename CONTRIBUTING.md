@@ -29,3 +29,16 @@ Thanks for helping keep this directory accurate and useful.
 ## Fixes welcome
 
 Corrections to broken links, outdated prices, wrong licences or changed free tiers are just as valuable as new entries. Please open a PR with a short note on what changed and where you verified it.
+
+## The interactive site
+
+The browsable site in [`docs/`](docs/) is **generated from this README** — the README stays the single source of truth. After editing entries:
+
+```sh
+node scripts/build.mjs        # regenerate docs/data/catalog.json + docs/js/icons.js
+node scripts/build.mjs --check   # verify README and docs/ are in sync (CI runs this)
+node scripts/serve.mjs        # preview locally at http://localhost:8788/
+```
+
+Pull requests that change README entries without regenerating `docs/` will fail CI. Commit the regenerated files together with your README change.
+

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="title desc">
+  <title id="title">Awesome Tools</title>
+  <desc id="desc">A minimalist crossed wrench and screwdriver inside a rounded square.</desc>
+  <rect width="64" height="64" rx="14" fill="#1F2328"/>
+  <g fill="#FFFFFF">
+    <g transform="rotate(-45 32 32)">
+      <rect x="6" y="27" width="16" height="10" rx="4"/>
+      <rect x="21" y="29" width="4" height="6"/>
+      <rect x="25" y="30" width="30" height="4" rx="1"/>
+      <path d="M55 30 L61 28.6 L61 35.4 L55 34 Z"/>
+    </g>
+    <g transform="rotate(45 32 32)">
+      <rect x="8" y="29" width="38" height="6" rx="3"/>
+      <circle cx="46" cy="32" r="9"/>
+    </g>
+  </g>
+  <g transform="rotate(45 32 32)" fill="#1F2328">
+    <rect x="45" y="27" width="15" height="10"/>
+  </g>
+</svg>
