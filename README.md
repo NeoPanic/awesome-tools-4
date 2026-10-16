@@ -15,6 +15,11 @@
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-2da44f" alt="Pull requests welcome"></a>
 </p>
 
+<p align="center">
+  <a href="https://kritagyadubey.github.io/awesome-tools/"><strong>Browse the interactive directory &rarr;</strong></a><br>
+  <sub>Instant search, filters, favorites and sorting — generated live from this README.</sub>
+</p>
+
 ---
 
 **Awesome Tools** answers a simple question: *what can I actually use for free?* It collects software, websites and services that genuinely work without paying — forever-free products, honest free tiers, open-source projects you can self-host, and tools that run entirely on your own machine.
