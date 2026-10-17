@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://img.shields.io/badge/tools-700%2B-0969da"><img src="https://img.shields.io/badge/tools-700%2B-0969da" alt="700+ tools"></a>
+  <a href="https://img.shields.io/badge/tools-1000%2B-0969da"><img src="https://img.shields.io/badge/tools-1000%2B-0969da" alt="1000+ tools"></a>
   <a href="https://img.shields.io/badge/last%20verified-October%202026-2da44f"><img src="https://img.shields.io/badge/last%20verified-October%202026-2da44f" alt="Links and free tiers last verified October 2026"></a>
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-2da44f" alt="Pull requests welcome"></a>
 </p>
@@ -42,6 +42,7 @@ Every entry links directly to the tool's **official website or official reposito
 | **Free** | A genuinely free offering with no meaningful paywall for its core use. |
 | **Open source** | Released under a verifiable open-source license; you can inspect, modify and usually self-host it. |
 | **Free tier** | A continuing plan with real limits (usage, features, seats) — not a trial. |
+| **Free API tier** | A continuing free API quota published by the provider — a documented rate limit, not trial credits. |
 | **Free credits** | Access depends on a limited or periodically refilling credit quota. |
 | **Local/offline** | Runs on your own device without sending your data to a paid service. |
 | **Open weights** | Model weights are published for download — this is *not* the same as an open-source license. |
@@ -94,6 +95,11 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
   - [Code formatting, linting, security scanning and auditing](#code-formatting-linting-security-scanning-and-auditing)
   - [Regex, JSON, XML, YAML and data formats](#regex-json-xml-yaml-and-data-formats)
   - [Documentation, browser dev tools, scraping and testing](#documentation-browser-dev-tools-scraping-and-testing)
+  - [CI/CD and build automation](#ci-cd-and-build-automation)
+  - [Monitoring, logging and status pages](#monitoring-logging-and-status-pages)
+  - [DNS hosting and edge networking](#dns-hosting-and-edge-networking)
+  - [Workflow automation and scheduling](#workflow-automation-and-scheduling)
+  - [Data visualization, BI and dashboarding](#data-visualization-bi-and-dashboarding)
 - [Website Creation and Online Business](#website-creation-and-online-business)
   - [No-code and free website builders](#no-code-and-free-website-builders)
   - [Content management, blogging and e-commerce](#content-management-blogging-and-e-commerce)
@@ -102,6 +108,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
   - [Uptime monitoring, DNS and domains](#uptime-monitoring-dns-and-domains)
   - [Email marketing, CRM and customer support](#email-marketing-crm-and-customer-support)
   - [Social media scheduling and business automation](#social-media-scheduling-and-business-automation)
+  - [Web hosting and deployment](#web-hosting-and-deployment)
 - [Productivity and Organization](#productivity-and-organization)
   - [Notes and personal knowledge bases](#notes-and-personal-knowledge-bases)
   - [Tasks, projects, calendars and habits](#tasks-projects-calendars-and-habits)
@@ -115,6 +122,9 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
   - [Distraction-free and Markdown writing](#distraction-free-and-markdown-writing)
   - [Grammar, spell checking and readability](#grammar-spell-checking-and-readability)
   - [Dictionaries, thesauri and text utilities](#dictionaries-thesauri-and-text-utilities)
+  - [Presentations and slide decks](#presentations-and-slide-decks)
+  - [Messaging and team chat](#messaging-and-team-chat)
+  - [Newsletters and mailing lists](#newsletters-and-mailing-lists)
 - [Graphic Design and Creative Work](#graphic-design-and-creative-work)
   - [Raster image editing and photo management](#raster-image-editing-and-photo-management)
   - [Vector graphics and illustration](#vector-graphics-and-illustration)
@@ -140,6 +150,8 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
   - [QR codes, barcodes and text tools](#qr-codes-barcodes-and-text-tools)
   - [Hashing, metadata and encoding](#hashing-metadata-and-encoding)
   - [Calculators, converters and date/time utilities](#calculators-converters-and-datetime-utilities)
+  - [Developer web utilities](#developer-web-utilities)
+  - [Archiving, compression and extraction](#archiving-compression-and-extraction)
 - [Security and Privacy](#security-and-privacy)
   - [Password managers](#password-managers)
   - [Two-factor authentication and encryption](#two-factor-authentication-and-encryption)
@@ -148,10 +160,16 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
   - [Secure messaging](#secure-messaging)
   - [Breach checking, malware scanning and network diagnostics](#breach-checking-malware-scanning-and-network-diagnostics)
   - [Defensive security learning and CTF labs](#defensive-security-learning-and-ctf-labs)
+  - [Free VPN tiers](#free-vpn-tiers)
+  - [Firewalls and traffic filtering](#firewalls-and-traffic-filtering)
+  - [Security hardening and auditing](#security-hardening-and-auditing)
 - [Computer and Operating-System Utilities](#computer-and-operating-system-utilities)
   - [Windows utilities](#windows-utilities)
   - [Linux and macOS utilities](#linux-and-macos-utilities)
   - [Remote desktop, virtualization and network monitoring](#remote-desktop-virtualization-and-network-monitoring)
+  - [Terminal emulators](#terminal-emulators)
+  - [Backup, cloning and partitioning](#backup-cloning-and-partitioning)
+  - [Privacy and security focused desktop operating systems](#privacy-and-security-focused-desktop-operating-systems)
 - [Education, Research and Knowledge](#education-research-and-knowledge)
   - [Free online courses and interactive learning](#free-online-courses-and-interactive-learning)
   - [Mathematics and science resources](#mathematics-and-science-resources)
@@ -160,6 +178,10 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
   - [Digital libraries and open textbooks](#digital-libraries-and-open-textbooks)
   - [Language learning and practice](#language-learning-and-practice)
   - [Quizzes, practice and educational simulators](#quizzes-practice-and-educational-simulators)
+  - [Tutoring and homework help](#tutoring-and-homework-help)
+  - [Typing, study skills and student planners](#typing-study-skills-and-student-planners)
+  - [Learning platforms: classroom and LMS](#learning-platforms-classroom-and-lms)
+  - [Scientific computing and plotting](#scientific-computing-and-plotting)
 - [Career, Accessibility, Data and More](#career-accessibility-data-and-more)
   - [Career, résumé and interview tools](#career-résumé-and-interview-tools)
   - [Accessibility and assistive technology](#accessibility-and-assistive-technology)
@@ -168,6 +190,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
   - [Game development learning and communities](#game-development-learning-and-communities)
   - [Developer communities and forums](#developer-communities-and-forums)
   - [Free-resource discovery directories](#free-resource-discovery-directories)
+  - [Health, finance and everyday organization](#health-finance-and-everyday-organization)
 - [Hidden Gems](#hidden-gems)
 - [Popular Free Alternatives](#popular-free-alternatives)
 - [Privacy and Safety Notes](#privacy-and-safety-notes)
@@ -180,6 +203,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 ## Artificial Intelligence
 
 ### AI chatbots and general assistants
+<!-- verified: 2026-10-16 -->
 
 - [ChatGPT](https://chatgpt.com/) — OpenAI's general assistant for conversation, drafting, coding, image generation and file analysis. **Free tier · account required · premium-model message caps.**
 - [Claude](https://claude.com/) — Anthropic's assistant strong at long-document reading, writing, coding and data analysis. **Free tier · account required · daily message limits.**
@@ -195,7 +219,13 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [DuckDuckGo AI Chat](https://duckduckgo.com/aichat) — Anonymous AI chat with web answers that requires no account or login. **Free · no account · daily message cap.**
 - [Groq](https://groq.com/) — Very fast chat over open models running on Groq's LPU hardware, with a rate-limited free tier. **Free tier · rate limits.**
 
+- [LibreChat](https://github.com/LibreChat-AI/LibreChat) — Self-hostable MIT chat app fronting OpenAI, Anthropic, Google and local models behind one interface. **Free · Open source · Bring your own API keys or local runtime.**
+- [LobeChat](https://lobehub.com/) — Open-source web chat app for switching between cloud and local model providers in one polished interface. **Free · Open source · LobeHub Community License (Apache-2.0 based); commercial derivatives need permission.**
+- [Cherry Studio](https://github.com/cherryHQ/cherry-studio) — Free desktop client for talking to many cloud models and plugging in local runtimes like Ollama. **Free · Open source · Local/offline · Windows, macOS, Linux; works offline with local models.**
+- [Pi](https://pi.ai/) — Inflection's free personal chatbot for friendly everyday conversation on web, iOS and Android. **Free · Free for personal use · Consumer app only; no public API.**
+
 ### AI search engines and web research
+<!-- verified: 2026-10-16 -->
 
 - [Perplexity](https://www.perplexity.ai/) — Answer engine that replies with inline citations to live web sources. **Free tier · account required · advanced models limited daily.**
 - [Brave Search](https://search.brave.com/) — Independent search index with AI-generated answers and no tracking. **Free · AI answers may be rate-limited.**
@@ -208,7 +238,10 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Exa](https://exa.ai/) — Semantic search API built for AI agents and retrieval pipelines rather than keyword queries. **Free credits · account required.**
 - [Tavily](https://tavily.com/) — Real-time web search and extraction API designed for LLMs and agents. **Free credits · about 1,000 credits/month.**
 
+- [Vane (formerly Perplexica)](https://github.com/ItzCrazyKns/Vane) — MIT self-hosted answer engine blending SearXNG search with LLM citations, formerly Perplexica. **Free · Open source · Bring your own model API key or local model.**
+
 ### AI agents and autonomous workflows
+<!-- verified: 2026-10-16 -->
 
 - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) — Framework for chaining LLM reasoning into multi-step autonomous tasks. **Open source.**
 - [CrewAI](https://github.com/crewAIInc/crewAI) — Python framework for orchestrating role-playing AI agents that collaborate on tasks. **Open source.**
@@ -220,6 +253,11 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Activepieces](https://github.com/activepieces/activepieces) — MIT-licensed no-code automation platform with AI pieces — a genuine open Zapier alternative. **Open source.**
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) — Autonomous software agent that edits code, runs commands and browses the web to solve dev tasks. **Open source.**
 - [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) — Lets language models run Python, JavaScript and shell code locally on your machine. **Open source · Local/offline.**
+
+- [Langflow](https://github.com/langflow-ai/langflow) — MIT drag-and-drop builder for wiring LLM prompts, RAG and agents into flows you can run locally. **Free · Open source · Hosted cloud tier paid; self-hosting free.**
+- [smolagents](https://github.com/huggingface/smolagents) — Hugging Face's minimal agent library where models write code plans to call tools. **Free · Open source · Library only; you supply model access.**
+- [CAMEL](https://github.com/camel-ai/camel) — Research framework for building large-scale cooperative multi-agent societies and role-play simulations. **Free · Open source · Research-oriented; model costs separate.**
+- [PydanticAI](https://github.com/pydantic/pydantic-ai) — MIT Python agent framework from the Pydantic team with typed, validated structured outputs. **Free · Open source · Works with any provider, including free tiers.**
 
 ### AI writing, editing and grammar
 
@@ -236,8 +274,9 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Sapling](https://sapling.ai/) — Grammar, spelling and rewrite assistant aimed at business writing, with an API. **Free tier · daily suggestion limit.**
 
 ### AI summarization and document analysis
+<!-- verified: 2026-10-16 -->
 
-- [NotebookLM](https://notebooklm.google.com/) — Turns your uploaded sources into grounded summaries, study guides and Audio Overviews. **Free · Google account required · source and notebook caps.**
+- [NotebookLM](https://notebooklm.google.com/) — Turns your uploaded sources into grounded summaries, study guides, mind maps, flashcards and Audio Overviews; renamed Gemini Notebook in July 2026. **Free · Google account required · 100 notebooks, 50 sources each, about 50 chat queries and 3 Audio Overviews per day, 10 Deep Research runs per month.**
 - [TLDR This](https://tldrthis.com/) — Condenses articles, essays and long web pages into key summary paragraphs. **Limited free · a few summaries per day.**
 - [ChatPDF](https://www.chatpdf.com/) — Upload a PDF and ask questions about it in a chat that cites page locations. **Limited free · daily document cap.**
 - [PDF.ai](https://pdf.ai/) — Chat with any PDF to extract answers, summaries and key figures with citations. **Free tier · limited pages per document.**
@@ -247,7 +286,11 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [ElevenReader](https://elevenlabs.io/reader/) — Reads articles and documents aloud in natural AI voices and summarizes what it reads. **Free · monthly character allowance.**
 - [Scholarcy](https://www.scholarcy.com/article-summarizer) — Breaks research papers into flashcards, summaries and reference lists. **Limited free · about 3 summaries/day.**
 
+- [AnythingLLM](https://anythingllm.com) — Open-source desktop app that chats with your PDFs, docs and websites locally, keeping all data and vector storage on your machine. **Open source · Local/offline.**
+- [Khoj](https://khoj.dev) — Self-hosted open-source AI that turns your notes, files and web clips into a personal second brain you fully control. **Open source · Self-host free; hosted cloud offering has paid plans.**
+
 ### AI meeting assistants and voice notes
+<!-- verified: 2026-10-16 -->
 
 - [Otter.ai](https://otter.ai/) — Records, transcribes and summarizes meetings with speaker labels and action items. **Free tier · 300 minutes/month, 30 minutes per conversation.**
 - [Fathom](https://fathom.video/) — Notetaker that records, transcribes and summarizes calls for individuals at no cost. **Free · account required · team features paid.**
@@ -259,7 +302,10 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Read AI](https://www.read.ai/) — Summarizes meetings with engagement metrics, action items and follow-up drafts. **Limited free · about 5 meetings/month.**
 - [Happy Scribe](https://www.happyscribe.com/) — AI and human-quality transcription and subtitling for audio, video and meetings. **Limited free · free minutes capped per month.**
 
+- [Granola](https://www.granola.ai) — AI meeting notepad that writes notes from your own computer audio; unlimited free notes. **Free tier · Notes older than 30 days are paywalled.**
+
 ### AI translation and language learning
+<!-- verified: 2026-10-16 -->
 
 - [DeepL](https://www.deepl.com/) — Neural machine translation with a rewriting tool and glossaries for more natural output. **Free tier · character limits per request.**
 - [Google Translate](https://translate.google.com/) — Translates text, speech, images and live conversations across 100+ languages. **Free.**
@@ -269,6 +315,8 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Language Reactor](https://www.languagereactor.com/) — Browser extension adding dual subtitles, pop-up dictionaries and phrase tools to Netflix and YouTube. **Free · Pro features paid.**
 
 > Learning an app or language from scratch? See [Education, Research and Knowledge](#education-research-and-knowledge) for courses, flashcards and practice platforms.
+
+- [Immersive Translate](https://immersivetranslate.com) — Free bilingual translator for websites, PDFs and video subtitles that shows original and translation side by side. **Free · Pro adds extras.**
 
 ### AI data analysis, spreadsheets and documents
 
@@ -294,6 +342,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [scite](https://scite.ai/) — Shows whether citing papers support, mention or dispute a given claim. **Limited free · few lookups/day.**
 
 ### AI studying, tutoring and flashcards
+<!-- verified: 2026-10-16 -->
 
 - [Quizlet](https://quizlet.com/) — Create and study flashcard sets with AI-generated practice, quizzes and test prep. **Limited free · ads · Learn/Practice Tests and AI features capped.**
 - [RemNote](https://www.remnote.com/) — Turns notes and PDF annotations into spaced-repetition flashcards, quizzes and summaries automatically. **Free tier · advanced AI tools paid · account required.**
@@ -302,6 +351,10 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Notedly.ai](https://notedly.ai/) — Condenses textbook chapters, papers and articles into structured notes, flashcards, quizzes and mind maps. **Free tier · monthly word limit.**
 - [Knowt](https://knowt.com/) — Builds free AI flashcards, study guides, lecture notes and unlimited practice tests from your notes and PDFs. **Free · account required for AI generation.**
 - [Anki](https://apps.ankiweb.net/) — Spaced-repetition flashcard system with shared decks and add-ons, built for long-term memorisation. **Open source · Free · iOS app is paid.**
+
+- [Mochi](https://www.mochi.cards) — Markdown notes and spaced-repetition flashcards, free forever with no sign-up; runs offline on desktop, mobile and web. **Free · Local/offline.**
+- [StudyFetch](https://www.studyfetch.com) — Turns lectures, slides and notes into flashcards, quizzes, study plans and an AI tutor. **Free tier · Free to start without a credit card; deeper AI features on paid plans.**
+- [Khanmigo](https://www.khanmigo.ai) — Khan Academy's AI teaching assistant, 100% free for teachers worldwide, plus free quiz and report-comment generators. **Free · Teacher tools free (Microsoft-sponsored); learner tutoring is paid ($4/month, US).**
 
 ### AI presentations, slides and visual storytelling
 
@@ -393,6 +446,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Voicemod](https://www.voicemod.net/) — Real-time voice changer and soundboard that modifies your mic for calls, streams and games. **Free tier · some voice packs paid · desktop app.**
 
 ### Speech-to-text and transcription
+<!-- verified: 2026-10-16 -->
 
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp) — C/C++ port of Whisper optimised for Apple silicon, CPUs and consumer GPUs with quantized models. **Open source · Local/offline · no account or cloud needed.**
 - [faster-whisper](https://github.com/SYSTRAN/faster-whisper) — Reimplements Whisper in CTranslate2 for up to 4× faster transcription on the same hardware. **Open source · Local/offline · Python setup required.**
@@ -400,6 +454,8 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Buzz](https://github.com/chidiwilliams/buzz) — Cross-platform desktop app that transcribes audio and video files with Whisper models. **Open source · downloads models locally.**
 - [Vosk](https://github.com/alphacep/vosk-api) — Lightweight offline speech recognition toolkit for desktop, mobile and embedded devices. **Open source · Local/offline.**
 - [TurboScribe](https://turboscribe.ai/) — Cloud transcription of audio and video files into text in 98+ languages. **Free · 3 transcripts/day up to 30 minutes each · account required.**
+
+- [MacWhisper](https://macwhisper.com) — Free-forever Mac app that transcribes lectures, videos and meetings locally with Whisper models. **Free tier · Local/offline · Pro unlocks batch transcription and extras.**
 
 ### AI website and application builders
 
@@ -426,6 +482,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 ## AI Models and Infrastructure
 
 ### Free model access and playgrounds
+<!-- verified: 2026-10-16 -->
 
 - [Google AI Studio](https://aistudio.google.com/) — Playground and API console for prototyping with Gemini models, including a rate-limited free API tier. **Free · Limited free.**
 - [Google Colab](https://colab.research.google.com/) — Free hosted Jupyter notebooks with GPUs and TPUs for training and running models in the browser. **Free · Limited free · session and usage limits.**
@@ -444,6 +501,11 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [fal.ai](https://fal.ai/) — Serverless API and queues for image, video, audio and other generative-media models. **Limited free · mostly pay-per-use.**
 - [Ollama Cloud](https://ollama.com/cloud) — Hosted access to larger open models from the Ollama app, alongside unlimited local running. **Free credits · starter usage resets monthly · larger models need purchased credits.**
 
+- [Cohere API](https://cohere.com/) — Free evaluation API keys giving rate-limited access to Cohere's Command chat, embed and rerank models. **Free tier · Free API tier · Limited free · 1,000 calls/month, 20 req/min, non-commercial use only.**
+- [Z.ai GLM API](https://z.ai/) — GLM flash models priced permanently free, so developers can call GLM-4.7-Flash without a credit card. **Free tier · Free API tier · Free flash models ~1 concurrent request; other GLM models paid.**
+- [OVHcloud AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) — EU-hosted API exposing 20+ open-weight models free at two requests per minute per IP with no signup. **Free · Free API tier · Open weights · Limited free · Anonymous tier 2 rpm; authenticated tier (400 rpm) needs payment method on file.**
+- [LMArena](https://lmarena.ai/) — Berkeley-built arena where anyone chats with and blindly votes on frontier models side by side for free. **Free · Rebranded to 'Arena'; JS-only app; occasional queues.**
+
 ### Open-weight models and model repositories
 
 - [Hugging Face](https://huggingface.co/) — Hub of open models, datasets and Spaces plus free tools for hosting and sharing ML. **Free · PRO plan optional.**
@@ -460,6 +522,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [AudioSet](https://research.google.com/audioset/) — Google's free labelled audio-event dataset of millions of short clips. **Free.**
 
 ### Local and offline AI
+<!-- verified: 2026-10-16 -->
 
 - [Ollama](https://github.com/ollama/ollama) — Run and manage open language models locally with a simple command-line tool and API. **Open source · Local/offline.**
 - [LM Studio](https://lmstudio.ai/) — Desktop app for discovering, downloading and chatting with local models, plus serving a local API. **Free for personal use · Local/offline.**
@@ -474,7 +537,15 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [text-generation-webui](https://github.com/oobabooga/text-generation-webui) — Gradio front end for running and comparing many local LLM backends. **Open source · Local/offline.**
 - [SillyTavern](https://github.com/SillyTavern/SillyTavern) — Open-source front end for long-context conversation and roleplay with local or API models. **Open source · Local/offline.**
 
+- [exo](https://github.com/exo-explore/exo) — Runs a single open model spread across your idle phones, laptops and GPUs at home. **Free · Open source · Local/offline · Open weights · Performance depends on combined devices.**
+- [KoboldCpp](https://github.com/LostRuins/koboldcpp) — Single-file inference engine and web UI that runs GGUF models on CPU, CUDA, ROCm or Vulkan. **Free · Open source · Local/offline · Open weights · AGPL-3.0.**
+- [KTransformers](https://github.com/kvcache-ai/ktransformers) — Runtime that runs huge MoE models on one consumer CPU-and-GPU desktop machine. **Free · Open source · Local/offline · Open weights · Optimized for large MoE experts with partial GPU offload.**
+- [MLC LLM](https://github.com/mlc-ai/mlc-llm) — Compiler and runtime that deploys open models natively on phones, browsers and laptops. **Free · Open source · Local/offline · Open weights · Targets Apple Silicon, Android, browsers.**
+- [PrivateGPT](https://github.com/zylon-ai/private-gpt) — Offline RAG assistant that answers questions about your documents without data leaving your PC. **Free · Open source · Local/offline · Runs without internet.**
+- [Msty](https://msty.ai/) — Beginner-friendly desktop AI workspace pairing local models with online providers in one app. **Free · Local/offline · Free starting plan; paid Msty Studio unlocks advanced features.**
+
 ### AI frameworks, fine-tuning and evaluation
+<!-- verified: 2026-10-16 -->
 
 - [LangChain](https://github.com/langchain-ai/langchain) — Framework for composing LLM applications with chains, agents and hundreds of integrations. **Open source.**
 - [LlamaIndex](https://github.com/run-llama/llama_index) — Data framework for connecting LLMs to documents and APIs, with retrieval and agent tooling. **Open source.**
@@ -490,22 +561,46 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [JAX](https://github.com/jax-ml/jax) — Google's composable numerical-computation library with autodifferentiation and XLA compilation. **Open source · Free.**
 - [scikit-learn](https://scikit-learn.org/) — Classic Python library for classical machine learning: classification, clustering, regression and evaluation. **Open source · Free.**
 
+- [Axolotl](https://github.com/axolotl-ai-cloud/axolotl) — YAML-driven fine-tuning tool for LoRA, QLoRA and full-parameter training on consumer GPUs. **Free · Open source · GPU hardware or cloud credits still needed.**
+- [DeepSpeed](https://github.com/deepspeedai/DeepSpeed) — Microsoft's training library that makes fine-tuning and running large models memory-efficient. **Free · Open source · Library only; hardware and data are your own.**
+- [TRL](https://github.com/huggingface/trl) — Hugging Face's trainers for SFT, DPO, GRPO and RLHF fine-tuning of language models. **Free · Open source · Pairs with Transformers and PEFT.**
+- [PEFT](https://github.com/huggingface/peft) — Library of parameter-efficient fine-tuning methods such as LoRA. **Free · Open source · Requires a base model and compute.**
+- [promptfoo](https://github.com/promptfoo/promptfoo) — Command-line tool for testing, comparing and asserting on prompts and models before deployment. **Free · Open source · Runs locally free; hosted team features paid.**
+- [DeepEval](https://github.com/confident-ai/deepeval) — pytest-style framework scoring LLM outputs with 100-plus metrics for evals and guardrails. **Free · Open source · Self-host free; Confident AI cloud add-on paid.**
+- [Ragas](https://github.com/explodinggradients/ragas) — Metrics toolkit for evaluating retrieval-augmented generation pipelines against test data. **Free · Open source · Slower update cadence than siblings.**
+- [Helicone](https://github.com/Helicone/helicone) — LLM gateway and dashboard that logs every call, with a free cloud tier of 10k requests monthly. **Free · Open source · Free tier · Cloud 10k requests/month, no credit card; self-hosting unlimited.**
+- [LangSmith](https://www.langchain.com/langsmith) — LangChain's tracing and evaluation platform, free for one seat with 5,000 base traces every month. **Free tier · Limited free · Free for personal use · 1 free seat, 5k traces/month, 14-day retention; extra seats paid.**
+- [Haystack](https://github.com/deepset-ai/haystack) — Production RAG framework from deepset for wiring any LLM, retriever and vector store together. **Free · Open source · deepset's hosted platform is a separate paid product.**
+- [RAGFlow](https://github.com/infiniflow/ragflow) — RAG engine with deep document understanding that turns messy files into grounded, cited answers. **Free · Open source · Self-host free; managed cloud paid.**
+- [GraphRAG](https://github.com/microsoft/graphrag) — Microsoft library that graphs your corpus so LLMs can answer global questions over many documents. **Free · Open source · Indexing cost in LLM tokens can be significant.**
+- [txtai](https://github.com/neuml/txtai) — Embeddings database combining vector search, SQL, graphs and LLM workflows in one API. **Free · Open source · Runs fully self-hosted with local embedding models.**
+
 ### AI deployment, serving and hosting
+<!-- verified: 2026-10-16 -->
 
 - [vLLM](https://github.com/vllm-project/vllm) — High-throughput inference and serving engine with PagedAttention for large models. **Open source.**
 - [SGLang](https://github.com/sgl-project/sglang) — Fast serving engine for structured generation and high-concurrency LLM workloads. **Open source.**
 - [Text Generation Inference](https://github.com/huggingface/text-generation-inference) — Hugging Face's production text-generation server optimized for Transformers models. **Open source.**
 - [Coolify](https://coolify.io/) — Self-hosted PaaS that deploys apps, databases and services to your own servers. **Open source · you supply the server.**
 
+- [SkyPilot](https://github.com/skypilot-org/skypilot) — Scheduler that launches jobs and model servers on the cheapest available GPUs across clouds. **Free · Open source · Cloud GPU costs still apply; tool itself free.**
+- [BentoML](https://github.com/bentoml/BentoML) — Framework for packaging, serving and scaling models behind OpenAI-compatible REST endpoints. **Free · Open source · BentoCloud managed service paid; self-host free.**
+- [Cog](https://github.com/replicate/cog) — Format and CLI for packaging models into reproducible GPU-ready Docker containers. **Free · Open source · Hosting costs separate.**
+- [Text Embeddings Inference (TEI)](https://github.com/huggingface/text-embeddings-inference) — High-throughput Docker server for embedding and reranker models on GPU or CPU. **Free · Open source · Self-hosted; hardware is your own.**
+
 ### Free image, audio and video model resources
+<!-- verified: 2026-10-16 -->
 
 - [InvokeAI](https://github.com/invoke-ai/InvokeAI) — Open-source creative suite for running diffusion models with a node-based canvas and pipelines. **Open source · Local/offline.**
 - [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) — Browser UI for text-to-image generation with extensions, LoRAs and fine-grained control. **Open source · Local/offline.**
 - [AudioCraft (MusicGen)](https://github.com/facebookresearch/audiocraft) — Meta's research library bundling MusicGen text-to-music, AudioGen sound generation and EnCodec. **Open source · Local/offline · non-commercial research terms.**
 
+- [Fooocus](https://github.com/lllyasviel/Fooocus) — One-click image generator that prioritizes prompt-engineering-free quality on consumer GPUs. **Free · Open source · Local/offline · Infrequent updates; still usable offline.**
+
 ## Programming and Developer Tools
 
 ### Code editors and IDEs
+<!-- verified: 2026-10-16 -->
 
 - [Visual Studio Code](https://code.visualstudio.com/) — Lightweight extensible editor from Microsoft with a huge extension marketplace. **Free · Open source · official builds include Microsoft telemetry you can opt out of.**
 - [VSCodium](https://github.com/VSCodium/vscodium) — Community-built VS Code binaries with Microsoft branding, telemetry and licensing removed. **Free · Open source · some Microsoft-published extensions are missing from its marketplace.**
@@ -518,7 +613,11 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Eclipse IDE](https://www.eclipse.org/ide/) — Mature plugin-based IDE strong for Java and embedded development. **Open source · dated interface versus newer editors.**
 - [Git](https://git-scm.com/) — Distributed version control system used by nearly every code hosting platform. **Open source · command line only.**
 
+- [Lapce](https://lapce.dev) — Lightning-fast Rust code editor with LSP support, modal editing and plugins; fully open source and works offline. **Free · Open source · Local/offline.**
+- [code-server](https://github.com/coder/code-server) — Run Microsoft VS Code on a Linux server and open it in any browser; MIT-licensed and self-hosted. **Free · Open source · Local/offline · Distinct from the VS Code and VSCodium desktop entries already listed.**
+
 ### AI coding assistants and code review
+<!-- verified: 2026-10-16 -->
 
 - [GitHub Copilot](https://github.com/features/copilot/) — AI pair programmer inside GitHub, VS Code and JetBrains with completions, chat and PR help. **Free tier · Student offer · free plan is usage-capped.**
 - [Cursor](https://cursor.com/) — AI-native code editor (VS Code fork) with agent mode, tab completion and codebase chat. **Free tier · Limited free.**
@@ -534,7 +633,12 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Kilo Code](https://github.com/Kilo-Org/kilocode) — Open-source VS Code coding agent combining planning, implementation and review modes. **Open source.**
 - [Sourcegraph Cody](https://sourcegraph.com/docs/cody) — AI coding assistant that grounds chat and edits in Sourcegraph code-search context. **Limited free · free plan is now restricted; check current terms.**
 
+- [Tabby](https://github.com/TabbyML/tabby) — Self-hosted coding assistant giving code completions and chat tuned on your own repositories. **Free · Open source · Local/offline · Core Apache-2.0; enterprise features under separate ee/ license.**
+- [CodeGeeX](https://codegeex.cn/) — Free VS Code and JetBrains assistant offering completion, explanation and translation across languages. **Free · Cloud-backed; UI and docs partly Chinese.**
+- [Trae](https://www.trae.ai/) — Free VS Code-based AI IDE with agentic editing. **Free tier · Limited free · Auto mode only, 5,000 autocompletions/month; paid plans from $20/mo.**
+
 ### AI terminal coding agents
+<!-- verified: 2026-10-16 -->
 
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) — Google's open-source terminal agent with a generous free quota for personal Google accounts. **Open source · Free · rate-limited.**
 - [OpenCode](https://github.com/anomalyco/opencode) — Open-source terminal coding agent that works with any model provider, local or cloud. **Open source.**
@@ -543,6 +647,9 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Goose](https://github.com/block/goose) — Block's open-source terminal agent that extends models with MCP-based tools and local project context. **Open source.**
 - [Crush](https://github.com/charmbracelet/crush) — Charm's open-source terminal coding agent with a fast, keyboard-driven TUI. **Open source.**
 - [Qwen Code](https://github.com/QwenLM/Qwen-Code) — Open-source terminal coding agent forked from Gemini CLI and tuned for Qwen models. **Open source.**
+
+- [gptme](https://github.com/gptme/gptme) — MIT terminal agent that edits files, runs commands and browses using local or hosted models. **Free · Open source · Bring your own model access.**
+- [SWE-agent](https://github.com/SWE-agent/SWE-agent) — Princeton's MIT agent that turns any LLM into an autonomous engineer that fixes GitHub issues. **Free · Open source · Research/benchmark tooling; you supply model access.**
 
 ### Programming learning resources
 
@@ -556,6 +663,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Eloquent JavaScript](https://eloquentjavascript.net/) — Free online book with interactive exercises covering modern JavaScript. **Free · Open source.**
 
 ### Online compilers and playgrounds
+<!-- verified: 2026-10-16 -->
 
 - [Replit](https://replit.com/) — Browser IDE that runs, collaborates on and hosts apps with a single click, with an AI agent. **Free tier · daily compute and storage caps.**
 - [CodeSandbox](https://codesandbox.io/) — Cloud sandboxes with GitHub import, live previews and fast dev environments. **Free tier · sandbox compute and private projects capped.**
@@ -566,7 +674,10 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Rust Playground](https://play.rust-lang.org/) — Official sandbox for running and sharing Rust code in the browser. **Free.**
 - [TypeScript Playground](https://www.typescriptlang.org/play/) — Official playground for trying TypeScript compiler options and sharing links. **Free · Open source.**
 
+- [GitHub Codespaces](https://github.com/features/codespaces) — Cloud dev environments from any repo in seconds; GitHub Free personal plans include 120 hrs compute and 15 GB-month. **Free tier · Free for personal use · Free quota applies to personal accounts only.**
+
 ### Git, version control and GitHub productivity
+<!-- verified: 2026-10-16 -->
 
 - [GitHub](https://github.com/) — Largest Git host with pull requests, Actions, packages, security and Pages. **Free tier · Actions minutes and Packages storage capped.**
 - [GitLab](https://gitlab.com/) — All-in-one platform bundling repositories, CI/CD, registries and security scanning. **Free tier · monthly CI minutes and storage quotas.**
@@ -577,7 +688,12 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Jujutsu](https://github.com/jj-vcs/jj) — Modern version control system designed around rebasing and conflict-free working copies. **Open source.**
 - [GitLens](https://gitlens.amod.io/) — VS Code extension adding blame, history and code-authorship insights to Git repositories. **Free tier · Pro features paid.**
 
+- [Gitea](https://gitea.com) — Lightweight self-hosted Git service with issues, pull requests and CI; MIT-licensed and easy to deploy. **Free · Open source · Local/offline · Related to Forgejo (already listed) — Gitea is the upstream project.**
+- [gitui](https://github.com/gitui-org/gitui) — Blazing-fast terminal UI for git written in Rust; works where GUIs can't. **Free · Open source · Local/offline · Rust alternative to lazygit (already listed).**
+- [Codeberg](https://codeberg.org) — Free, non-profit Git hosting for free and open-source software, run on the Forgejo platform. **Free · Limited free · Free for personal use · Community-run; resource limits and lawful-use rules apply.**
+
 ### API clients, testing and documentation
+<!-- verified: 2026-10-16 -->
 
 - [Postman](https://www.postman.com/) — Feature-rich workspace for designing, testing, documenting and sharing API collections. **Free tier · login required, team and sync features capped.**
 - [Bruno](https://www.usebruno.com/) — Offline-first API client that stores collections as plain files you keep in Git. **Open source.**
@@ -588,7 +704,13 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Mockoon](https://mockoon.com/) — Build mock REST APIs from JSON in seconds for front-end development. **Open source · hosted mocks paid.**
 - [Swagger Editor](https://editor.swagger.io/) — Write and validate OpenAPI specifications with live documentation preview. **Open source · Free.**
 
+- [Mock Service Worker (MSW)](https://mswjs.io) — Intercept network requests to mock REST and GraphQL APIs in browser and Node tests with same-origin code. **Free · Open source · Local/offline · Intercepts real requests instead of running a proxy server.**
+- [WireMock](https://wiremock.org) — API mocking and stubbing for tests and prototypes with record/playback and request verification. **Free · Open source · Local/offline · Apache 2.0; WireMock Cloud is the paid hosted edition.**
+- [Locust](https://locust.io) — Scalable load testing framework: define user behaviour in Python and run thousands of concurrent users. **Free · Open source · Local/offline · Alternative to the k6 and Apache JMeter entries already listed.**
+- [webhook.site](https://webhook.site) — Instant temporary public URL that captures incoming HTTP requests; free for quick webhook and API debugging. **Free · Free tier · Temporary endpoint; longer retention and custom domains are paid.**
+
 ### Databases, SQL playgrounds and clients
+<!-- verified: 2026-10-16 -->
 
 - [DBeaver Community](https://dbeaver.io/) — Universal database client with SQL editing, ER diagrams and JDBC support. **Free · Open source · paid Lite/Team editions exist.**
 - [Beekeeper Studio](https://www.beekeeperstudio.io/) — Clean cross-platform GUI for MySQL, Postgres, SQLite, SQL Server and more. **Free tier · Open source community edition.**
@@ -600,7 +722,10 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Supabase](https://supabase.com/) — Open-source Firebase alternative providing Postgres, auth, storage and realtime APIs. **Free tier · Open source · two free projects with resource caps.**
 - [Pocketbase](https://pocketbase.io/) — Backend in a single executable: database, auth, file storage and admin UI. **Open source · Local/offline.**
 
+- [DbGate](https://dbgate.org) — Cross-platform SQL and NoSQL database manager: browse, edit, query and export. **Free · Open source · Local/offline · GPL-3.0; supports MySQL, Postgres, SQL Server, MongoDB and SQLite.**
+
 ### Backend, hosting, serverless and containers
+<!-- verified: 2026-10-16 -->
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) — GUI for building, sharing and running containers on Mac and Windows. **Limited free · free for personal, education and small businesses only.**
 - [GitHub Pages](https://pages.github.com/) — Publishes static sites and SPAs straight from a GitHub repository. **Free · static hosting only, soft bandwidth limits.**
@@ -615,7 +740,13 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Caddy](https://caddyserver.com/) — Web server that provisions and renews HTTPS certificates automatically. **Open source · Let's Encrypt rate limits apply.**
 - [Traefik](https://traefik.io/) — Reverse proxy and load balancer with automatic routing for Docker and Kubernetes. **Open source · free core.**
 
+- [Podman](https://podman.io) — Daemonless container engine for building and running OCI containers; rootless by default, no background daemon. **Free · Open source · Local/offline · CLI-compatible alternative to Docker Desktop (already listed).**
+- [Dokku](https://dokku.com) — Mini Heroku-style PaaS: git-push deployments to your own server; MIT-licensed and self-hosted. **Free · Open source · Local/offline · Lighter, git-push based alternative related to Coolify (already listed).**
+- [OpenTofu](https://opentofu.org) — Drop-in open-source infrastructure-as-code fork of Terraform under MPL-2.0, with community governance. **Free · Open source · Local/offline.**
+- [Cloudflare Workers](https://workers.cloudflare.com) — Serverless edge functions and full apps on Cloudflare's network; free plan includes 100,000 requests per day. **Free · Free tier · Free plan includes 100,000 requests/day plus free DNS and Workers KV allowances.**
+
 ### Code formatting, linting, security scanning and auditing
+<!-- verified: 2026-10-16 -->
 
 - [Prettier](https://prettier.io/) — Opinionated code formatter with plugins for JavaScript, CSS, Markdown and more. **Open source.**
 - [ESLint](https://eslint.org/) — Configurable static analysis and linting for JavaScript and TypeScript. **Open source.**
@@ -625,7 +756,13 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Trivy](https://trivy.dev/) — Scans container images, repositories and filesystems for CVEs and misconfigurations. **Open source.**
 - [Gitleaks](https://github.com/zricethezav/gitleaks) — Scans Git history, repos and files for committed secrets and API keys. **Open source.**
 
+- [ShellCheck](https://github.com/koalaman/shellcheck) — Static analysis that finds bugs and style problems in bash and shell scripts with actionable fixes. **Free · Open source · Local/offline.**
+- [hadolint](https://github.com/hadolint/hadolint) — Dockerfile linter enforcing best practices, deprecated instructions and common packaging mistakes. **Free · Open source · Local/offline.**
+- [tflint](https://github.com/terraform-linters/tflint) — Terraform and OpenTofu linter catching errors, deprecated syntax and naming-convention issues before apply. **Free · Open source · Local/offline.**
+- [TruffleHog](https://github.com/trufflesecurity/trufflehog) — Scans git history and other sources for leaked secrets such as API keys and credentials. **Free · Open source · Local/offline · AGPL-3.0; similar role to Gitleaks (already listed).**
+
 ### Regex, JSON, XML, YAML and data formats
+<!-- verified: 2026-10-16 -->
 
 - [Regex101](https://regex101.com/) — Regex tester with per-flavor matching, explanation and a step debugger. **Free · saved patterns need an account.**
 - [jq](https://jqlang.github.io/jq/) — Command-line processor for slicing, filtering and reshaping JSON. **Open source.**
@@ -636,7 +773,10 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [yamllint](https://github.com/adrienverge/yamllint) — Lints YAML files against configurable style and syntax rules from the command line. **Open source.**
 - [JSONPlaceholder](https://jsonplaceholder.typicode.com/) — Free fake REST API with canned posts, users and todos for prototyping. **Free · read-only sample data.**
 
+- [fx](https://github.com/antonmedv/fx) — Terminal JSON viewer and processor with interactive queries, syntax highlighting and streaming input. **Free · Open source · Local/offline.**
+
 ### Documentation, browser dev tools, scraping and testing
+<!-- verified: 2026-10-16 -->
 
 - [Docusaurus](https://docusaurus.io/) — React-based static site generator from Meta for documentation sites. **Open source.**
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/) — Automated audits for performance, accessibility, SEO and best practices. **Open source · Free.**
@@ -650,9 +790,46 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [GitHub Actions](https://github.com/features/actions) — CI/CD workflows that run on hosted runners directly from a repository. **Free tier · private repos get a monthly minute allowance.**
 - [Renovate](https://docs.renovatebot.com/) — Bot that opens pull requests to keep dependencies updated across many ecosystems. **Open source · Free tier.**
 
+- [Vitest](https://vitest.dev) — Fast Vite-powered unit testing framework with Jest-compatible API, snapshots, coverage and workspaces. **Free · Open source · Local/offline · Complements Jest (already listed).**
+
+### CI/CD and build automation
+<!-- verified: 2026-10-16 -->
+
+- [CircleCI](https://circleci.com/pricing) — Hosted CI/CD; the Free plan gives 30,000 credits (about 6,000 build minutes) monthly, with more for open-source projects. **Free · Free tier · Free for personal use · 30,000 credits/month (about 6,000 build minutes); open-source projects up to 400,000 credits; 5 concurrent tasks on Free.**
+- [Buildkite](https://buildkite.com/pricing) — CI/CD platform with self-hosted agents; the $0 Free plan includes up to 2,000 Linux vCPU minutes per month. **Free · Free tier · No credit card required for the Free plan.**
+- [Woodpecker CI](https://woodpecker-ci.org) — Simple container-based continuous integration server, the community fork of Drone; Apache-2.0 and easy to self-host. **Free · Open source · Local/offline.**
+
+### Monitoring, logging and status pages
+<!-- verified: 2026-10-16 -->
+
+- [Grafana Cloud](https://grafana.com/pricing) — Hosted observability stack with an always-free plan: 14-day retention for metrics, logs, traces and profiles. **Free · Free tier · Self-hosted Grafana OSS is also free.**
+- [Gatus](https://github.com/TwiN/gatus) — Health dashboard monitoring HTTP, TCP, ICMP and DNS endpoints with configurable alert conditions. **Free · Open source · Local/offline · Apache-2.0; complements Uptime Kuma (already listed) with YAML-defined checks.**
+- [SigNoz](https://signoz.com) — Open-source APM unifying traces, metrics and logs; MIT-licensed core you can self-host as a Datadog alternative. **Free · Open source · Local/offline · Enterprise folders (ee/) ship under a separate license; core product code is MIT.**
+
+### DNS hosting and edge networking
+<!-- verified: 2026-10-16 -->
+
+- [deSEC](https://desec.io) — Free, security-focused DNS hosting run by a non-profit with DNSSEC by default and a full API. **Free · Free tier · Sustainable-use limits apply to very high volume.**
+
+### Workflow automation and scheduling
+<!-- verified: 2026-10-16 -->
+
+- [Windmill](https://windmill.dev) — Code-first platform turning scripts (Python, TypeScript, SQL) into APIs, cron jobs and UIs; open-source core. **Free · Open source · Local/offline · Apache-2.0/AGPL dual core; enterprise edition separately licensed; alternative to n8n and Node-RED (already listed).**
+
+### Data visualization, BI and dashboarding
+<!-- verified: 2026-10-16 -->
+
+- [Observable Plot](https://observablehq.com/plot/) — Concise JavaScript library for exploratory data visualization on SVG and canvas, built on D3. **Free · Open source · Local/offline · ISC licensed.**
+- [Vega-Lite](https://vega.github.io/vega-lite/) — High-level grammar of interactive graphics: concise JSON specs compile into full Vega visualizations. **Free · Open source · Local/offline · BSD 3-Clause; declarative alternative that composes with D3 and ECharts (already listed).**
+- [QuickChart](https://quickchart.io) — Generates Chart.js chart images from URL/JSON parameters for reports, email and chatbots; AGPL, self-hostable. **Free · Open source · Hosted service free for low volume; open-source server you can self-host (AGPL-3.0).**
+- [Streamlit](https://streamlit.io) — Turn Python scripts into shareable web apps for data and ML; Apache-2.0 open source, free to self-host. **Free · Open source · Local/offline · Streamlit Community Cloud free tier is capped; self-hosting is unrestricted.**
+- [Apache Superset](https://superset.apache.org) — Apache-top-level BI platform for SQL exploration, charts and dashboards; Apache-2.0 and self-hostable. **Free · Open source · Local/offline.**
+- [Metabase](https://metabase.com) — Ask questions of your data with a no-code query builder, charts and dashboards; open-source edition. **Free · Open source · Local/offline · Open-source core is AGPL; paid cloud and enterprise editions exist.**
+
 ## Website Creation and Online Business
 
 ### No-code and free website builders
+<!-- verified: 2026-10-16 -->
 
 - [Wix](https://www.wix.com/) — Drag-and-drop website builder with templates, hosting and an app market. **Free tier · free sites use a `wixsite.com` subdomain and show Wix branding.**
 - [Wix AI](https://www.wix.com/ai-website-builder) — Wix's prompt-to-site generator that drafts layout, copy and pages for you to edit. **Free tier · publishing limits match the Wix free plan.**
@@ -665,7 +842,11 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Astro](https://astro.build/) — Web framework that ships zero JavaScript by default for fast content-heavy sites. **Open source · a code framework, not a visual builder.**
 - [Hugo](https://gohugo.io/) — Extremely fast Go-based static site generator for blogs, docs and portfolios. **Open source · templating takes practice.**
 
+- [Jekyll](https://jekyllrb.com) — MIT-licensed static site generator that turns Markdown into blogs and sites, with first-class GitHub Pages hosting. **Free · Open source · Pairs with free GitHub Pages hosting (listed separately).**
+- [Eleventy](https://www.11ty.dev) — Simple, fast static site generator that emits no client-side JavaScript by default and collects no telemetry. **Free · Open source · MIT (v3.1.7); license confirmed via project listings rather than homepage.**
+
 ### Content management, blogging and e-commerce
+<!-- verified: 2026-10-16 -->
 
 - [WordPress](https://wordpress.org/) — Self-hosted CMS powering a huge share of the web with themes and plugins. **Open source · hosting, premium themes and plugins cost extra.**
 - [Ghost](https://ghost.org/) — Modern publishing platform for blogs, memberships and paid newsletters. **Open source · self-hosting needs a server; managed Ghost(Pro) is paid.**
@@ -677,14 +858,22 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Gumroad](https://gumroad.com/) — Hosted storefront for selling digital products, memberships and downloads. **Free tier · transaction fees apply to every sale.**
 - [Publer](https://publer.com/) — Social media scheduler with bulk scheduling, recycling and AI caption helpers. **Free tier · 3 accounts and 10 posts scheduled ahead.**
 
+- [Decap CMS](https://www.decapcms.org) — Open-source, MIT-licensed Git-based CMS you self-host alongside a static site. **Free · Open source · Decap Turbo is an optional paid add-on.**
+
 ### Forms, surveys and data collection
+<!-- verified: 2026-10-16 -->
 
 - [Jotform](https://www.jotform.com/) — Drag-and-drop form builder with templates, payments and AI-assisted form creation. **Free tier · 5 active forms and limited submissions.**
 - [Jotform AI Agents](https://www.jotform.com/ai/) — Chat and voice agents that answer questions, capture leads and fill forms on your site. **Free tier · agent usage capped on free.**
 - [Tally](https://tally.so/) — Unlimited free forms with a Notion-like writing experience and conditional logic. **Free tier · branding and some features on paid plans.**
 - [Google Forms](https://forms.google.com/) — Free form and survey builder with automatic response sheets. **Free · Google account required.**
 
+- [FormSubmit](https://formsubmit.co) — Turn any HTML form into a working endpoint without code or signup; first submission needs one-time email confirmation. **Free · Submissions delivered to your email.**
+- [Web3Forms](https://web3forms.com) — Form backend that emails you submissions; free plan allows 250 submissions per month. **Free tier · 250 submissions/mo, unlimited forms and domains, 30-day history, no file uploads.**
+- [Formspree](https://formspree.io) — Form endpoint for static sites; free plan covers 50 submissions monthly with a 30-day archive. **Free tier · 50 submissions/mo, no file uploads; page labels tier 'for testing and development'.**
+
 ### SEO and website analytics
+<!-- verified: 2026-10-16 -->
 
 - [PageSpeed Insights](https://pagespeed.web.dev/) — Google's auditor for page performance, Core Web Vitals and mobile usability. **Free · field data needs enough Chrome traffic.**
 - [Google Search Console](https://search.google.com/search-console) — Official Google dashboard for indexing, search queries and site issues. **Free · requires domain verification.**
@@ -694,7 +883,13 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Matomo](https://matomo.org/) — Full-featured analytics platform you can self-host without cookie banners in most cases. **Open source · Free tier when self-hosted.**
 - [Google Analytics](https://analytics.google.com/) — The standard traffic-analysis platform, free for almost all site sizes. **Free · Google account · sampling on very large properties.**
 
+- [GoatCounter](https://goatcounter.com) — Open-source, cookieless web analytics with a free hosted tier for reasonable public usage. **Free · Open source · Donation-supported; self-hosting also possible.**
+- [Ackee](https://github.com/electerious/Ackee) — Self-hosted, cookieless analytics server released under the MIT license. **Free · Open source · Requires your own Node.js and MongoDB hosting.**
+- [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools) — Free SEO toolset: verified sites get unlimited event tracking, 5,000 crawl credits monthly plus backlink and keyword data. **Free tier · 1M events/project, 5K crawl credits/mo, 1,000 backlinks/keywords viewable at once.**
+- [XML-Sitemaps.com](https://www.xml-sitemaps.com) — Free online sitemap generator for sites with up to 500 pages, with no registration required. **Free tier · Up to 500 pages per sitemap.**
+
 ### Uptime monitoring, DNS and domains
+<!-- verified: 2026-10-16 -->
 
 - [Uptime Kuma](https://uptime.kuma.pet/) — Self-hosted uptime monitor and status pages with dozens of notification channels. **Open source · you must host and maintain it.**
 - [UptimeRobot](https://uptimerobot.com/) — Monitors websites, ports and ping targets with email and integration alerts. **Free tier · 50 monitors on 5-minute checks.**
@@ -702,6 +897,15 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [whatsmydns](https://whatsmydns.net/) — Checks DNS records and propagation across resolvers worldwide. **Free · history and bulk checks need an account.**
 - [MXToolbox](https://mxtoolbox.com/) — Diagnostics for DNS, mail delivery, blacklists and domain health. **Free tier · some lookups limited per day.**
 - [DNS Checker](https://dnschecker.org/) — Global DNS propagation checker plus many small network and domain utilities. **Free · ad-supported.**
+
+- [Healthchecks.io](https://healthchecks.io) — Cron job and scheduled task monitoring; the free plan watches up to 20 checks with alerts. **Free tier · 20 checks free; no credit card. Open-source server code available.**
+- [Let's Encrypt](https://letsencrypt.org) — Nonprofit certificate authority issuing free automated TLS certificates valid for 90 days. **Free · Distinct from listed Certbot (ACME client); ISRG states certs remain free.**
+- [ZeroSSL](https://zerossl.com) — Certificate authority offering free 90-day SSL certificates through ACME. **Free tier · Free plan issues 3 certificates at a time.**
+- [ClouDNS Free DNS](https://www.cloudns.net) — Free DNS hosting for one zone with 50 records, up to 500,000 queries monthly, plus one mail forward and one DDNS host. **Free tier · 1 zone, 50 records, 500K queries/mo.**
+- [Namecheap FreeDNS](https://www.namecheap.com/domains/freedns/) — Free DNS hosting for any domain registered elsewhere, with standard records, email forwarding and Dynamic DNS. **Free · Domain registration itself is paid.**
+- [Hurricane Electric Free DNS](https://dns.he.net) — Free authoritative DNS hosting with full record support and strong IPv6 coverage. **Free · Free account required.**
+- [DuckDNS](https://www.duckdns.org) — Free dynamic DNS service that points a chosen subdomain at your changing IP address. **Free · Sponsor-funded, no paid plan.**
+- [is-a.dev](https://is-a.dev) — Free subdomain service for developers; claim a name by opening a GitHub pull request. **Free · Promised to stay free; DNS hosting included.**
 
 ### Email marketing, CRM and customer support
 
@@ -720,9 +924,16 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Make](https://www.make.com/) — Visual scenario builder that routes and transforms data between apps and APIs. **Free tier · monthly operation allowance and active-scenario cap.**
 - [n8n](https://github.com/n8n-io/n8n) — Workflow automation with 400+ integrations and AI agent nodes, free when self-hosted. **Open source · fair-code license · hosted cloud is paid.**
 
+### Web hosting and deployment
+<!-- verified: 2026-10-16 -->
+
+- [Surge.sh](https://surge.sh) — Deploy static sites free with unlimited publishing, a free subdomain or custom domain and basic SSL. **Free tier · Paid Pro adds custom SSL, CORS, redirects and password protection.**
+- [InfinityFree](https://www.infinityfree.com) — Free web hosting with 5 GB disk, unlimited bandwidth, free SSL and DNS, and no ads. **Free tier · 5,000 MB disk, 30k inodes, unlimited bandwidth; small static and PHP sites.**
+
 ## Productivity and Organization
 
 ### Notes and personal knowledge bases
+<!-- verified: 2026-10-16 -->
 
 - [Obsidian](https://obsidian.md/) — Local Markdown knowledge base with backlinks, canvas and a huge plugin ecosystem. **Free for personal use · Local/offline · not open source; commercial use needs a paid licence.**
 - [Joplin](https://github.com/laurent22/joplin) — Open-source Markdown notes with end-to-end encryption and sync via Dropbox, OneDrive or WebDAV. **Open source · syncing needs your own cloud storage.**
@@ -735,7 +946,14 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Evernote](https://www.evernote.com/) — Long-standing note app with web clipper, OCR search and task notes. **Limited free · the free plan is heavily restricted (small note and notebook caps).**
 - [Super Productivity](https://github.com/super-productivity/super-productivity) — Combines to-do lists, time tracking, calendars and Jira/GitHub integration in one app. **Open source.**
 
+- [Notesnook](https://notesnook.com) — End-to-end encrypted notes app with offline sync; free plan gives unlimited notes and 50MB monthly storage. **Open source · Free tier · GPLv3; free tier 50MB/month.**
+- [SilverBullet](https://github.com/silverbulletmd/silverbullet) — Self-hosted Markdown knowledge base that runs as a local server. **Open source · Local/offline · MIT.**
+- [SiYuan](https://github.com/siyuan-note/siyuan) — Local-first Markdown note-taking app with block-level references and backlinks. **Open source · Local/offline · AGPL-3.0.**
+- [Simplenote](https://simplenote.com/) — Cross-platform note app where syncing, sharing, version history and backups are completely free. **Free.**
+- [Zim Desktop Wiki](https://zim-wiki.org/) — Free desktop wiki storing pages as plain-text files on your machine. **Open source · Local/offline · GPL-2.0.**
+
 ### Tasks, projects, calendars and habits
+<!-- verified: 2026-10-16 -->
 
 - [Todoist](https://todoist.com/) — Task manager with projects, labels, natural-language dates and filters. **Free tier · project, filter and reminder counts capped.**
 - [Trello](https://trello.com/) — Kanban boards built from lists, cards, checklists and Butler automation. **Free tier · limited boards per workspace and automation runs.**
@@ -747,7 +965,14 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [OpenProject](https://github.com/opf/openproject) — Web-based project management with Gantt charts, time budgets and agile boards. **Open source · Community edition must be self-hosted.**
 - [ProjectLibre](https://www.projectlibre.com/) — Desktop project-management app positioned as a free Microsoft Project alternative. **Free · Open core · desktop app.**
 
+- [Cal.com](https://cal.com/pricing) — Open-source scheduling platform, free forever for 1 user with unlimited event types and calendars. **Free · Open source · Self-hostable.**
+- [Calendly](https://calendly.com/pricing) — Free plan covers 1 event type, 1 calendar connection and unlimited one-on-one meetings. **Free tier · 1 event type limit.**
+- [Kanboard](https://github.com/kanboard/kanboard) — Self-hosted kanban board with a simple workflow model. **Open source · MIT; project in maintenance mode.**
+- [todo.txt](https://github.com/todotxt/todo.txt) — Plain-text task management format with free CLI apps; task files stay local. **Open source · Local/offline · GPL-3.0.**
+- [Taskwarrior](https://github.com/GothenburgBitFactory/taskwarrior) — MIT command-line task manager that stores your to-do list in local plain-text files. **Open source · Local/offline.**
+
 ### Time tracking, focus and distraction control
+<!-- verified: 2026-10-16 -->
 
 - [Clockify](https://clockify.me/) — Timesheet-style tracker with team dashboards, reports and project billing rates. **Free tier · advanced reports and timesheets need Pro.**
 - [Toggl Track](https://toggl.com/track/) — One-click timer tracking with calendar sync, estimates and rich reports. **Free tier · free plan limited to five users.**
@@ -755,14 +980,21 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Pomofocus](https://pomofocus.io/) — Browser-based Pomodoro timer with custom intervals, tasks and focus rooms. **Free · account optional.**
 - [Stretchly](https://github.com/hovancik/stretchly) — Cross-platform break-time reminder that nudges you away from the keyboard. **Open source.**
 
+- [Kimai](https://www.kimai.org/) — Open-source self-hosted time tracker with an ongoing free cloud tier for teams. **Open source · Free tier · AGPL-3.0.**
+- [Cold Turkey](https://getcoldturkey.com/pricing) — Free Blocker tier blocks websites with exceptions, timed blocks and statistics. **Limited free · App blocking and schedules are paid Pro.**
+
 ### Bookmarks and read-it-later
+<!-- verified: 2026-10-16 -->
 
 - [Raindrop.io](https://raindrop.io/) — Bookmark manager with collections, tags, full-text search and a web clipper. **Free tier · free for personal use, Pro adds extras.**
 - [Wallabag](https://github.com/wallabag/wallabag) — Self-hosted "read it later" app that saves articles and strips them for comfortable reading. **Open source · self-host required.**
 - [Instapaper](https://www.instapaper.com/) — Saves articles for offline reading with highlights and text-to-speech. **Free tier · full-text search and advanced features need Premium.**
 - [Linkding](https://github.com/sissbruecker/linkding) — Minimal self-hosted bookmark manager with tags, full-text search and browser extensions. **Open source · self-host required.**
 
+- [Karakeep](https://karakeep.app/) — Open-source bookmark-everything app, self-hostable with Docker or use the ongoing free cloud tier. **Open source · Free tier · AGPL-3.0.**
+
 ### Whiteboards, collaboration and mind mapping
+<!-- verified: 2026-10-16 -->
 
 - [Excalidraw](https://github.com/excalidraw/excalidraw) — Hand-drawn-style diagram editor with live collaboration and PNG/SVG export. **Open source · hosted sync belongs to paid Excalidraw+.**
 - [Miro](https://miro.com/) — Online whiteboard with sticky notes, templates, voting and real-time multiplayer. **Free tier · three editable boards per user.**
@@ -772,7 +1004,11 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Freeplane](https://www.freeplane.org/) — Feature-rich desktop mind-mapping and knowledge-mapping tool that runs offline. **Open source.**
 - [OpenBoard](https://openboard.ch/) — Interactive whiteboard for teaching and presentations that works offline. **Open source.**
 
+- [Mural](https://www.mural.co/pricing) — Free plan gives unlimited members, 3 editable murals at a time and unlimited view-only visitors. **Free tier · 3 murals at a time.**
+- [MindMeister](https://www.mindmeister.com/pricing) — Free plan allows up to 3 mind maps with unlimited collaborators, templates and presentations. **Free tier · 3 mind maps limit.**
+
 ### Email clients, sync, backup, clipboard and launchers
+<!-- verified: 2026-10-16 -->
 
 - [Thunderbird](https://www.thunderbird.net/) — Full-featured desktop email, calendar and contacts client from Mozilla. **Open source.**
 - [Shortwave](https://shortwave.com/) — AI-powered Gmail client with bundles, search and writing help. **Free tier · advanced AI and team features paid.**
@@ -785,14 +1021,25 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Raycast](https://www.raycast.com/) — Spotlight-style launcher with extensions, snippets, window management and AI commands. **Free tier · some AI and team features paid.**
 - [AltTab](https://alt-tab-macos.netlify.app/) — Windows-style window switcher for macOS with thumbnails and shortcuts. **Open source · macOS only.**
 
+- [Tuta](https://tuta.com/pricing) — Free encrypted mail and calendar: 1GB storage, 1 calendar and 3 labels; open-source clients. **Open source · Free tier · 1GB free.**
+- [Proton Mail](https://proton.me/mail) — Free encrypted email with 1GB storage and 1 address; open-source audited apps. **Open source · Free tier · 'Free, and always will be'.**
+- [Mailspring](https://github.com/Foundry376/Mailspring) — Fast open-source desktop email client with a unified inbox; core features free. **Open source · GPL-3.0.**
+- [FairEmail](https://github.com/M66B/FairEmail) — Open-source Android email client supporting unlimited accounts; free to download and use. **Open source · GPL-3.0.**
+- [Rclone](https://rclone.org/) — Command-line tool syncing and backing up files with 70+ cloud storage providers. **Open source · Free.**
+- [Ditto Clipboard](https://github.com/sabrogden/Ditto) — Clipboard manager for Windows with a persistent searchable history. **Open source · GPL-3.0.**
+
 ### Video calls and collaboration
+<!-- verified: 2026-10-16 -->
 
 - [Jitsi Meet](https://jitsi.org/) — Free, open-source video conferencing you can run on your own server or use on meet.jit.si. **Open source · Free · longer meetings on the public server need an account.**
 - [BigBlueButton](https://bigbluebutton.org/) — Open-source virtual classroom built for teaching, with whiteboard, polls and breakout rooms. **Open source · self-host required.**
 
+- [Zoom](https://zoom.us/pricing) — Basic plan is free forever: unlimited 40-minute meetings with up to 100 participants, chat and local recording. **Free tier · 40-minute group meeting cap.**
+
 ## Writing and Communication
 
 ### Documents and office suites
+<!-- verified: 2026-10-16 -->
 
 - [Google Docs](https://docs.google.com/) — Browser-based word processor with real-time co-editing and comment threads. **Free · account required.**
 - [Google Sheets](https://sheets.google.com/) — Online spreadsheet with formulas, pivot tables and live collaboration. **Free · account required.**
@@ -803,18 +1050,28 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Pandoc](https://github.com/jgm/pandoc) — Converts documents between Markdown, DOCX, EPUB, HTML, LaTeX and dozens of other formats. **Open source.**
 - [Typst](https://github.com/typst/typst) — Modern typesetting system that compiles simple markup into PDF as a lighter alternative to LaTeX. **Open source · runs locally or in the browser.**
 
+- [Etherpad](https://etherpad.org/) — Real-time collaborative document editor you can self-host; Apache 2.0 licensed. **Open source.**
+- [Gnumeric](https://gnumeric.org/) — Free open-source spreadsheet application built to replace expensive office suites. **Open source · GPL v2/v3.**
+- [CryptPad](https://github.com/cryptpad/cryptpad) — End-to-end encrypted collaborative documents and office suite; self-hostable or free cloud use. **Open source · AGPL-3.0.**
+
 ### Distraction-free and Markdown writing
+<!-- verified: 2026-10-16 -->
 
 - [FocusWriter](https://gottcode.org/focuswriter/) — Full-screen, distraction-free writing environment with goals, timers and themes. **Open source · Local/offline.**
 - [Mark Text](https://github.com/marktext/marktext) — Minimal open-source Markdown editor with typewriter scrolling and live preview. **Open source · development updates are slow.**
 - [Zettlr](https://www.zettlr.com/) — Markdown editor for academic writing with citation support and multiple export formats. **Open source.**
 
+- [Ghostwriter](https://github.com/wereturtle/ghostwriter) — Distraction-free Markdown editor for desktop with live HTML preview and export. **Open source · Local/offline · GPL-3.0.**
+
 ### Grammar, spell checking and readability
+<!-- verified: 2026-10-16 -->
 
 - [Hemingway Editor](https://hemingwayapp.com/) — Highlights long sentences, passive voice and adverbs to make prose bolder and clearer. **Free web editor · desktop version paid.**
 - [ProWritingAid](https://www.prowritingaid.com/) — In-depth style, pacing and readability reports for long-form and fiction writing. **Limited free · web version processes 500 words at a time.**
 
 > For AI-first checkers (Grammarly, QuillBot, LanguageTool, Harper, Trinka) see [AI writing, editing and grammar](#ai-writing-editing-and-grammar).
+
+- [Vale](https://vale.sh/) — Open-source offline prose linter CLI with custom style guides; free for personal and CI use. **Open source · Local/offline · MIT.**
 
 ### Dictionaries, thesauri and text utilities
 
@@ -824,9 +1081,29 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 
 > **Also useful from other sections:** [translation and language tools](#ai-translation-and-language-learning) · [meeting recording and transcription](#ai-meeting-assistants-and-voice-notes) · [presentations and slides](#ai-presentations-slides-and-visual-storytelling) · [blogging and newsletters](#content-management-blogging-and-e-commerce) · [email clients](#email-clients-sync-backup-clipboard-and-launchers)
 
+### Presentations and slide decks
+<!-- verified: 2026-10-16 -->
+
+- [Marp](https://github.com/marp-team/marp-cli) — Write slide decks in plain Markdown and export to PDF, PPTX and HTML for free. **Open source · Local/offline · MIT.**
+- [Slidev](https://github.com/slidevjs/slidev) — Markdown-based slides for developers; free to build and present decks locally. **Open source · Local/offline · MIT.**
+
+### Messaging and team chat
+<!-- verified: 2026-10-16 -->
+
+- [Slack](https://slack.com/pricing) — Free forever plan with 90-day message history, up to 10 apps, 1:1 huddles and unlimited channels. **Free tier · 90-day history limit.**
+- [Zulip](https://github.com/zulip/zulip) — Open-source team chat with unique topics-in-channels threading; free to self-host. **Open source · Apache-2.0.**
+
+### Newsletters and mailing lists
+<!-- verified: 2026-10-16 -->
+
+- [Listmonk](https://github.com/knadh/listmonk) — Self-hosted newsletter and mailing list manager with no subscriber limits. **Open source · AGPL-3.0.**
+- [MailerLite](https://mailerlite.com/pricing) — Free plan covers 250 subscribers and 2,500 monthly emails with 2 seats and 3 automations. **Free tier · 250 subscribers / 2,500 emails per month.**
+- [beehiiv](https://www.beehiiv.com/pricing) — Free plan includes 2,500 subscribers and unlimited monthly sends for launching a newsletter. **Free tier · 2,500 subscribers.**
+
 ## Graphic Design and Creative Work
 
 ### Raster image editing and photo management
+<!-- verified: 2026-10-16 -->
 
 - [GIMP](https://www.gimp.org/) — Raster image editor for photo retouching, compositing and painting with layers and brushes. **Open source.**
 - [Krita](https://krita.org/) — Painting studio for concept art, illustration and animation with advanced brush engines. **Open source.**
@@ -837,12 +1114,21 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [MyPaint](https://github.com/mypaint/MyPaint) — Pressure-sensitive painting app with an infinite canvas built for sketching. **Open source.**
 - [Pixlr](https://pixlr.com/) — Online photo editor (Pixlr E and X) with AI generators, one-click background removal and batch editing. **Limited free · ads · premium tools and exports locked.**
 
+- [digiKam](https://www.digikam.org) — Advanced open-source photo manager with face recognition, geolocation, RAW editing and batch processing. **Open source.**
+- [ImageOptim](https://imageoptim.com) — Removes metadata and recompresses images losslessly so sites load faster; macOS only. **Open source · GPL v2+; paid Mac App Store build exists.**
+- [XnView MP](https://www.xnview.com/en/xnviewmp) — View, organise and batch-convert 500+ formats with EXIF editing. **Free for personal use · Free for private non-commercial use; company licence €29.**
+
 ### Vector graphics and illustration
+<!-- verified: 2026-10-16 -->
 
 - [Inkscape](https://inkscape.org/) — Professional vector graphics editor built on SVG, with paths, nodes and boolean operations. **Open source.**
 - [Scribus](https://www.scribus.net/) — Open-source desktop publishing for multi-page layouts, brochures and print-ready PDFs. **Open source.**
 - [Lunacy](https://icons8.com/lunacy) — Native SVG editor for Windows, macOS and Linux that ships with free Icons8 graphics and AI features. **Free · some AI and cloud features need an Icons8 account.**
 - [Boxy SVG](https://boxy-svg.com/) — Compact vector editor for SVG files that runs in the browser and on desktop. **Free tier · some exports need a licence.**
+
+- [SVGOMG](https://jakearchibald.github.io/svgomg) — Web GUI for SVGO that strips bloat out of SVG files with fine-grained optimization toggles. **Open source.**
+- [Linearity Curve](https://www.linearity.io) — Vector design and illustration app for Mac, iPad and iPhone that works completely offline. **Free tier · 'Curve is free' for individual users; Auto Trace uses optional credits.**
+- [Vectr](https://vectr.com) — Free, simple SVG vector editor for web and desktop with basic AI extras on credits. **Free tier · AI image/gradient generators use free credits.**
 
 ### UI/UX design, wireframing and prototyping
 
@@ -866,6 +1152,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [The League of Moveable Type](https://www.theleagueofmoveabletype.com/) — Open-source type foundry releasing well-crafted free typefaces. **Open source.**
 
 ### Colour palettes, icons and illustrations
+<!-- verified: 2026-10-16 -->
 
 - [Coolors](https://coolors.co/) — Generates colour palettes with keyboard shortcuts, contrast checks and image extraction. **Free tier · saving and some exports need Pro.**
 - [Happy Hues](https://www.happyhues.co/) — Curated colour palettes shown in context on a real website design for inspiration. **Free.**
@@ -876,6 +1163,17 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Tabler Icons](https://tabler.io/icons) — Thousands of pixel-perfect MIT-licensed SVG icons built for interface work. **Open source.**
 - [unDraw](https://undraw.co/) — Openly licensed SVG illustrations you can recolour to match your brand. **Free · no attribution required.**
 - [Storyset](https://storyset.com/) — Customisable, animatable character and scene illustrations with a Figma plugin. **Free tier · free downloads require attribution.**
+
+- [Heroicons](https://heroicons.com) — Hand-crafted SVG icons by the makers of Tailwind CSS, in four styles, MIT-licensed and free for any project. **Open source.**
+- [Iconoir](https://iconoir.com) — 1,671 unique open-source SVG icons with no premium tier at all, plus Figma and React libraries. **Open source.**
+- [Color Hunt](https://colorhunt.co) — An open collection of hand-picked four-color palettes to browse and use in designs and code. **Free.**
+- [ManyPixels Gallery](https://www.manypixels.co/gallery) — 2,500+ free illustrations in 14 styles with an online editor; commercial use without attribution. **Free.**
+- [Humaaans](https://www.humaaans.com) — Mix-and-match people illustrations with swappable poses and clothing for UI and scenes. **Open source · CC0 public domain.**
+- [Open Doodles](https://www.opendoodles.com) — Playful hand-drawn people illustrations released into the public domain, with PNG and source files. **Open source · CC0 public domain.**
+- [DrawKit](https://www.drawkit.com) — Vector illustration and icon packs; a generous core library is free with optional email, Pro packs paid. **Free tier · No attribution required on the free packs.**
+- [Who Can Use](https://whocanuse.com) — Contrast checker that scores a colour pair against diverse vision types: age, colour blindness, sunlight. **Open source.**
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker) — Checks foreground and background colour pairs against WCAG AA and AAA ratios with pass or fail results. **Free.**
+- [Khroma](https://www.khroma.co) — AI colour tool that learns your preferences and generates unlimited custom palettes in the browser. **Free.**
 
 ### Stock photos, video and music
 
@@ -899,6 +1197,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Gephi](https://github.com/gephi/gephi) — Desktop tool for exploring, laying out and visualizing large networks and graphs. **Open source.**
 
 ### 3D modelling, CAD and animation
+<!-- verified: 2026-10-16 -->
 
 - [Blender](https://www.blender.org/) — 3D creation suite for modelling, sculpting, animation, rendering, compositing and video editing. **Open source.**
 - [FreeCAD](https://www.freecad.org/) — Parametric 3D modeller for real objects, aimed at mechanical and product design. **Open source.**
@@ -908,6 +1207,11 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Synfig Studio](https://synfig.org/) — 2D vector animation studio with bone rigging, tweening and frame-by-frame tools. **Open source.**
 - [OpenToonz](https://opentoonz.github.io/) — 2D animation production software used in professional studios. **Open source.**
 - [Pencil2D](https://github.com/pencil2d/pencil) — Simple hand-drawn 2D animation supporting both raster and vector layers. **Open source.**
+
+- [Blockbench](https://www.blockbench.net) — Free 3D model editor aimed at low-poly and Minecraft-style assets, with plugins, texturing and animation. **Open source.**
+- [MeshLab](https://www.meshlab.net) — Process, edit and clean up large 3D meshes; the classic open-source companion to Blender. **Open source.**
+- [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer-4-0-beta_) — Powerful 3D-printing slicer with paint-on supports and seam position control, based on Slic3r. **Open source.**
+- [UltiMaker Cura](https://ultimaker.com/software/ultimaker-cura) — Industry-standard 3D-printing slicer with a huge community profile library. **Open source.**
 
 ### Game assets and game engines
 
@@ -925,6 +1229,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 ## Video, Audio and Streaming
 
 ### Video editing
+<!-- verified: 2026-10-16 -->
 
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) — Full editing, colour grading, VFX and Fairlight audio suite from Blackmagic Design. **Free tier · some codecs and features are Studio-only.**
 - [Kdenlive](https://www.kdenlive.org/) — Multi-track non-linear video editor from the KDE community with proxy editing and effects. **Open source.**
@@ -933,12 +1238,19 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [OpenShot](https://www.openshot.org/) — Simple cross-platform timeline editor with keyframes, effects and title templates. **Open source.**
 - [Shutter Encoder](https://www.shutterencoder.com/) — Friendly GUI around FFmpeg for converting, trimming, audio extraction and broadcast-ready outputs. **Free · a few extended features are optional add-ons.**
 
+- [Avidemux](https://fixounet.free.fr/avidemux) — Simple editor for cutting, filtering and encoding video files, GPL-licensed. **Open source.**
+- [VSDC Free Video Editor](https://www.videosoftdev.com/vsdc-free-video-editor) — Non-linear Windows editor with effects, chroma key and encoding, with no watermark on free exports. **Free · Pro version sold separately.**
+- [Clipchamp](https://clipchamp.com) — Browser and Microsoft editor with stock assets and a screen recorder. **Free tier · Free tier exports 1080p without watermark; premium stock and 4K are paid.**
+
 ### Screen recording and live streaming
+<!-- verified: 2026-10-16 -->
 
 - [OBS Studio](https://obsproject.com/) — Cross-platform live streaming and recording with scenes, overlays, filters and plugin support. **Open source.**
 - [ShareX](https://getsharex.com/) — Windows screen capture, annotation, scrolling screenshots, GIF recording and automation. **Open source · Windows only.**
 - [Flameshot](https://flameshot.org/) — Screenshot tool with inline drawing, blurring and annotation before you share. **Open source · upload targets need a third-party service.**
 - [ScreenToGIF](https://github.com/NickeManarin/ScreenToGIF) — Records the screen, webcam or board into an editable GIF with a built-in frame editor. **Open source · Windows-focused.**
+
+- [Owncast](https://owncast.online) — Self-hosted live streaming server with chat and alerts, an open-source alternative to Twitch. **Open source.**
 
 ### Media conversion, compression and subtitles
 
@@ -947,11 +1259,19 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Subtitle Edit](https://github.com/SubtitleEdit/subtitleedit) — Creates, syncs, translates and converts subtitles with waveform display and OCR repair. **Open source · primarily a Windows build.**
 
 ### Audio editing, music production and podcasting
+<!-- verified: 2026-10-16 -->
 
 - [Audacity](https://www.audacityteam.org/) — Multi-track recorder and editor with noise removal, EQ, compression and analysis tools. **Open source.**
 - [Ardour](https://ardour.org/) — Professional multitrack digital audio workstation for recording, editing, mixing and mastering. **Open source · prebuilt installers are paid, source builds are free.**
 - [LMMS](https://lmms.io/) — Music production suite with synthesizers, beat sequencers, sample tracks and plugin hosting. **Open source.**
 - [ocenaudio](https://www.ocenaudio.com/) — Easy, cross-platform audio editor with real-time effects preview and large-file support. **Free · free for personal and commercial use.**
+
+- [Flat](https://flat.io) — Collaborative online music notation with playback. **Free tier · Free plan covers 15 scores and 30 instruments.**
+- [Waveform Free](https://www.tracktion.com/products/waveform-free) — Unlimited free multi-track DAW from Tracktion with no time, track or expiry limits. **Free · Optional paid feature packs exist; core DAW unrestricted.**
+- [Surge XT](https://surge-synthesizer.github.io) — Feature-rich open-source hybrid synthesizer as a plugin or standalone app. **Open source.**
+- [OpenMPT](https://openmpt.org) — Windows tracker for composing and playing module files, with a built-in sample library. **Free.**
+- [MuseScore Studio](https://musescore.org) — Free music notation software with playback and community sheet-music sharing. **Open source.**
+- [Auphonic](https://auphonic.com) — AI audio post-production: level correction, noise reduction and transcripts. **Free tier · Free 2 hours per month; free productions append an Auphonic jingle.**
 
 ### Media players
 
@@ -960,14 +1280,20 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [IINA](https://iina.io/) — Polished macOS media player built on mpv with picture-in-picture and HDR support. **Open source · macOS only.**
 
 ### Royalty-free sound and music libraries
+<!-- verified: 2026-10-16 -->
 
 - [Freesound](https://freesound.org/) — Collaborative database of user-uploaded sound effects, foley and samples. **Free tier · account required, licence differs per clip.**
 - [Musopen](https://musopen.org/) — Public-domain recordings of classical music plus free sheet music. **Free tier · some downloads need an account or donation.**
 - [Free Music Archive](https://freemusicarchive.org/) — Library of music released under Creative Commons licences for reuse with credit. **Free · check each track's licence.**
 
+- [Looperman](https://looperman.com) — 100,000+ free loops, acapellas and full tracks, royalty-free with a free account. **Free.**
+- [Zapsplat](https://www.zapsplat.com) — 160,000+ sound effects and music with free MP3 downloads. **Limited free · Free MP3 downloads require attribution; WAV and no-attribution are Premium.**
+- [Sonniss GDC Game Audio Bundles](https://sonniss.com/gameaudiogdc) — Multi-gigabyte annual game-audio bundles, royalty-free for unlimited commercial projects. **Free · Cannot be resold or used to train AI models.**
+
 ## Online Utilities and File Tools
 
 ### PDF creation, editing, merging and splitting
+<!-- verified: 2026-10-16 -->
 
 - [Stirling PDF](https://github.com/Stirling-Tools/Stirling-PDF) — Self-hosted browser suite for merging, splitting, compressing, converting, signing and OCR-ing PDFs. **Open source · Local/offline when self-hosted.**
 - [PDF24 Tools](https://www.pdf24.org/) — Large online PDF toolkit plus a free Windows desktop app (PDF24 Creator) for editing, merging and converting. **Free · web tools upload files to their servers; the desktop app keeps files local.**
@@ -979,32 +1305,50 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Smallpdf](https://smallpdf.com/) — Polished web suite for compressing, converting, signing and editing PDFs. **Free tier · daily usage limits.**
 - [PDF Arranger](https://github.com/pdfarranger/pdfarranger) — Drag-and-drop desktop app for reordering, rotating, cropping and merging PDF pages. **Open source · Local/offline.**
 
+- [PDFsam Basic](https://www.pdfsam.org) — Free and open-source desktop app to split, merge, rotate and encrypt PDFs; files never leave your computer. **Free · Open source · Local/offline · AGPL. PDFsam Visual is a separate 14-day trial and excluded.**
+
 ### OCR and document scanning
+<!-- verified: 2026-10-16 -->
 
 - [Tesseract](https://github.com/tesseract-ocr/tesseract) — Leading open-source OCR engine extracting text from scans and images in many languages. **Open source · needs preprocessing for noisy scans.**
 - [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) — Adds an invisible, searchable text layer to scanned PDFs from the command line. **Open source.**
 - [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) — Self-hosted archive that scans, OCRs, tags and full-text searches your paperwork. **Open source · requires your own server or NAS.**
 
+- [OCR.space](https://ocr.space) — Free online OCR with no signup, 5 MB per file, EU-hosted processing and deletion after use. **Free · Free API tier · Free API 500 requests/day/IP; files uploaded to EU servers, deleted after processing.**
+
 ### File and format conversion
+<!-- verified: 2026-10-16 -->
 
 - [CloudConvert](https://cloudconvert.com/) — Converts nearly any document, image, audio, video and archive format in the cloud with batch support. **Free tier · usage limits; heavy and API use is paid.**
 - [Zamzar](https://www.zamzar.com/) — Long-running browser converter for documents, images, audio and video files. **Free tier · file-size and daily limits.**
 - [Calibre](https://calibre-ebook.com/) — Ebook library manager converting between EPUB, MOBI, PDF and dozens of other formats. **Open source · Local/offline.**
 - [LocalSend](https://localsend.org/) — Shares files and clipboard text between devices over the local network without an account. **Open source · devices must be on the same network.**
 
+- [HEIC.dev](https://heic.dev) — Converts HEIC photos in your browser via WebAssembly without uploads; batches up to 500 files, strips EXIF. **Free · Local/offline · Ad-supported, open-source core.**
+- [TableConvert](https://tableconvert.com) — Free converter between Excel, CSV, JSON, SQL and 30+ table formats, running locally in your browser. **Free · Local/offline · 10 MB max per file; conversions happen locally.**
+- [fre:ac](https://www.freac.org) — Free and open-source audio converter and CD ripper for MP3, AAC, FLAC, Opus and more, on all desktop platforms. **Free · Open source · GPL-2.0; includes CD ripper and tag editor.**
+- [Sigil](https://sigil-ebook.com) — Free, open-source multi-platform editor for EPUB 2 and EPUB 3 books with plugins, metadata and validation. **Free · Open source · GPLv3; Calibre already listed for ebook management/conversion.**
+
 ### Image conversion, compression and resizing
+<!-- verified: 2026-10-16 -->
 
 - [Squoosh](https://squoosh.app/) — Compresses and compares images in the browser with side-by-side sliders and modern codecs. **Free · Local/offline processing · single-file workflow.**
 - [IrfanView](https://www.irfanview.com/) — Fast image viewer and batch converter with a huge format and plugin list. **Free for personal use · Windows only.**
 - [XnConvert](https://www.xnview.com/en/xnconvert/) — Batch image converter and processor supporting 500+ formats and actions. **Free for personal use · cross-platform.**
 - [TinyPNG](https://tinypng.com/) — Compresses PNG, JPEG and WebP images with smart lossy optimization. **Free tier · monthly compression limits on the web tool.**
 
+- [Bulk Resize Photos](https://bulkresizephotos.com) — Unlimited free batch image resizer with no sign-up; images are processed in your browser and never uploaded. **Free · Local/offline · 'Private — no uploading'.**
+- [Ezgif](https://ezgif.com) — Free online GIF and animation maker, converter and optimizer with optional in-browser local processing. **Free · Most tools upload files; Oct 2026 added a Local processing option and WASM bulk optimizer.**
+
 ### QR codes, barcodes and text tools
+<!-- verified: 2026-10-16 -->
 
 - [TEC-IT Barcode Generator](https://barcode.tec-it.com/) — Generates barcodes and QR codes for products, URLs and inventory entirely in the browser. **Free · bulk export and API access are paid.**
 - [goQR.me](https://goqr.me/) — Free QR code generator with logos, colours and CSV batch generation. **Free · ad-supported.**
 - [Diffchecker](https://www.diffchecker.com/) — Compares text, PDFs, images and Excel files and highlights the differences. **Free tier · some comparison types need an account.**
 - [WinMerge](https://winmerge.org/) — Visual folder and file differ for Windows with syntax highlighting and three-way merge. **Open source · Windows only.**
+
+- [QRCode Monkey](https://www.qrcode-monkey.com) — Free static QR code generator with logos, colors and vector export; codes never expire and have no scan limits. **Free · Logo files uploaded; images cached 24h. Dynamic codes are a separate paid product.**
 
 ### Hashing, metadata and encoding
 
@@ -1012,26 +1356,52 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [CyberChef](https://github.com/gchq/CyberChef) — "Swiss army knife" for encoding, hashing, compressing, extracting and transforming data in the browser. **Open source · runs locally when self-hosted.**
 
 ### Calculators, converters and date/time utilities
+<!-- verified: 2026-10-16 -->
 
 - [timeanddate](https://www.timeanddate.com/) — Time zones, meeting planners, countdowns, calendars and sunrise/sunset data. **Free · ad-supported, premium developer API paid.**
 - [RapidTables](https://www.rapidtables.com/) — Unit converters, percentage and scientific calculators, and reference tables. **Free · ad-supported.**
 
+- [Converter NOW](https://converter-now.web.app) — Open-source unit converter with no ads and no data collection, as a web app and on all major platforms. **Free · Open source · GPL-3.0; internet used only for daily currency rates.**
+- [Calculator.net](https://www.calculator.net) — Roughly 200 free online calculators covering finance, health, math and more, with no registration required. **Free · Ad-supported.**
+- [Epoch Converter](https://www.epochconverter.com) — Converts Unix timestamps to human dates and back with JavaScript in your browser, plus dozens of other date formats. **Free · Uses your computer's clock; client-side.**
+
+### Developer web utilities
+<!-- verified: 2026-10-16 -->
+
+- [htaccess Tester](https://htaccess.madewithlove.com) — Paste Apache .htaccess rewrite rules with a URL to preview exactly how the server would rewrite the request. **Free · Labeled 'Free developer tool'; no quota documented.**
+- [Crontab.guru](https://crontab.guru) — Free editor that explains cron schedule expressions in plain language as you edit them, with examples. **Free · Run by Cronitor (promotes paid monitoring), editor itself free with no signup.**
+- [RegExr](https://regexr.com) — Free browser-based regex tester for JavaScript and PHP/PCRE with live results, tests, cheatsheet and community patterns. **Free · Ad-supported; license not confirmed on official page so not labeled open-source. Distinct from Regex101 (already listed).**
+
+### Archiving, compression and extraction
+<!-- verified: 2026-10-16 -->
+
+- [PeaZip](https://peazip.github.io) — Free open-source archiver handling 200+ formats with strong encryption and optional two-factor passwords. **Free · Open source · LGPLv3; free for private and professional use; collects no data.**
+
 ## Security and Privacy
 
 ### Password managers
+<!-- verified: 2026-10-16 -->
 
 - [Bitwarden](https://bitwarden.com/) — Cross-platform password manager with vault sync, autofill and secure sharing. **Free tier · premium and organization features paid.**
 - [KeePassXC](https://keepassxc.org/) — Offline encrypted password database with browser integration, keyfiles and TOTP support. **Open source · no official mobile app.**
 - [KeePassDX](https://keepassdx.com/) — Android client for KeePass-style encrypted databases with autofill support. **Open source · Android only.**
 - [Proton Pass](https://proton.me/pass) — Password manager with passkeys, hide-my-email aliases and integrated two-factor codes. **Free tier · advanced extras paid.**
 
+- [KeePass](https://keepass.info/) — Offline password manager that encrypts your local database with a master key only you control. **Free · Open source · Local/offline · Windows-first interface; other platforms rely on official ports and community forks.**
+- [LessPass](https://www.lesspass.com/) — Deterministic password generator that derives passwords locally from a master password without storing a vault. **Free · Open source · Local/offline · Hosted server no longer accepts new registrations; browser extension and CLI still work.**
+
 ### Two-factor authentication and encryption
+<!-- verified: 2026-10-16 -->
 
 - [Aegis Authenticator](https://getaegis.app/) — Android two-factor authenticator with encrypted backups and easy TOTP migration. **Open source · Android only.**
 - [Ente Auth](https://ente.io/auth/) — End-to-end encrypted two-factor authentication app with sync across devices. **Open source · Free tier.**
 - [VeraCrypt](https://www.veracrypt.fr/) — Creates encrypted containers and encrypts partitions or whole system drives. **Open source · lost passwords are unrecoverable.**
 
+- [2FAS](https://2fas.com/) — Open-source authenticator that generates two-factor codes and approves logins via a browser extension. **Free · Open source · Password-manager extras are basic; core 2FA is completely free.**
+- [GnuPG](https://gnupg.org/) — Complete OpenPGP implementation for encrypting, signing and verifying files and email from the command line. **Free · Open source · Local/offline · Command-line oriented; graphical frontends installed separately.**
+
 ### Privacy-focused browsers and search
+<!-- verified: 2026-10-16 -->
 
 - [Firefox](https://www.mozilla.org/firefox/) — Independent browser with strong privacy controls, container tabs and deep customization. **Open source · account needed only for sync.**
 - [Brave](https://brave.com/) — Chromium-based browser that blocks ads and trackers by default and offers optional private search. **Open source · optional crypto features you can ignore.**
@@ -1039,11 +1409,18 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Tor Browser](https://www.torproject.org/download/) — Routes traffic through the Tor network to resist fingerprinting and surveillance. **Open source · slower speeds, some sites block Tor exits.**
 - [DuckDuckGo](https://duckduckgo.com/) — Search engine and browser that minimize tracking and show a per-site privacy grade. **Free · fewer advanced search operators than some rivals.**
 
+- [Mullvad Browser](https://mullvad.net/en/browser) — Free browser built with the Tor Project that applies Firefox hardening to resist fingerprinting. **Free · Open source · Local/offline · No built-in VPN; pair with a VPN or Tor for network anonymity.**
+
 ### Ad, tracker and DNS blocking
+<!-- verified: 2026-10-16 -->
 
 - [uBlock Origin](https://github.com/gorhill/uBlock) — Efficient content blocker for ads, trackers, malware domains and custom filter lists. **Open source · use the Lite build where Manifest V3 limits apply.**
 - [Privacy Badger](https://privacybadger.org/) — EFF's blocker that learns to stop invisible trackers as you browse. **Open source · Free.**
 - [NextDNS](https://nextdns.io/) — Private, configurable DNS filtering for ads, trackers and malware across all your devices. **Free tier · 300,000 DNS queries/day.**
+
+- [Pi-hole](https://pi-hole.net/) — Network-wide DNS sinkhole that blocks ads and trackers for every device on your home network. **Free · Open source · Local/offline · Needs a local machine or Raspberry Pi and DNS changes.**
+- [AdGuard Home](https://adguard.com/adguard-home/overview.html) — Self-hosted network-wide filter that stops ads, trackers and malicious domains before they reach your devices. **Free · Open source · Local/offline · Some advanced filtering/reporting limited to paid AdGuard apps.**
+- [NoScript](https://noscript.net/) — Firefox extension that blocks scripts, frames and active content on untrusted sites until you allow them. **Free · Open source · Default-deny can break pages until per-site permissions granted.**
 
 ### Secure messaging
 
@@ -1052,6 +1429,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Session](https://getsession.org/) — Messenger that needs no phone number and routes messages through an onion-routed network. **Open source · Free.**
 
 ### Breach checking, malware scanning and network diagnostics
+<!-- verified: 2026-10-16 -->
 
 - [Have I Been Pwned](https://haveibeenpwned.com/) — Checks whether your email addresses or passwords appear in known breaches. **Free · API access and monitoring are paid.**
 - [Mozilla Observatory](https://observatory.mozilla.org/) — Scores your public web server's security headers, TLS and DNS configuration. **Free · scans are rate-limited.**
@@ -1059,6 +1437,11 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Nmap](https://nmap.org/) — Network mapper and port scanner for inventorying hosts, services and firewalls on your own networks. **Open source · only scan systems you own or are authorized to test.**
 - [Wireshark](https://www.wireshark.org/) — Network protocol analyzer for inspecting traffic on networks you control. **Open source.**
 - [OWASP ZAP](https://www.zaproxy.org/) — Automated web application security scanner for finding common flaws in your own apps. **Open source.**
+
+- [Malwarebytes Free Virus Scanner](https://www.malwarebytes.com/mwb-free) — Free on-demand scanner that detects and removes malware and unwanted programs. **Free · Free edition scans on demand only; real-time protection requires Premium.**
+- [Mozilla Monitor](https://www.mozilla.org/en-US/products/monitor/) — Scans whether your email, phone number or personal data leaked in known breaches and alerts you. **Free · Free tier · Continuous monitoring, alerts and removal help beyond basic scans require paid Monitor Plus.**
+- [mitmproxy](https://mitmproxy.org/) — Interactive HTTPS interception proxy for inspecting and modifying traffic between your apps and the internet. **Free · Open source · Local/offline · Requires installing its CA cert; for auditing your own traffic (MIT license).**
+- [Angry IP Scanner](https://angryip.org/) — Fast cross-platform scanner that pings IP ranges and collects ports, hostnames and MAC addresses. **Free · Open source · Extra data gathering comes from community plugins.**
 
 ### Defensive security learning and CTF labs
 
@@ -1070,9 +1453,31 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 
 > This directory only covers **lawful, defensive** security tooling. Do not scan or test systems you do not own without explicit permission.
 
+### Free VPN tiers
+<!-- verified: 2026-10-16 -->
+
+- [Proton VPN Free](https://protonvpn.com/free-vpn) — Unlimited free VPN with no ads and a no-logs policy. **Free · Free tier · 1 device, no P2P or streaming servers, fewer countries than paid.**
+- [Windscribe](https://www.windscribe.com/) — VPN with an ongoing free plan giving 10GB of data each month once you confirm your email address. **Free · Free tier · 10GB/month cap; fewer server locations than paid.**
+- [hide.me](https://hide.me/) — VPN with a permanently free plan allowing one device and 10GB per month under an audited no-logs policy. **Free · Free tier · 1 device, 10GB/month.**
+
+### Firewalls and traffic filtering
+<!-- verified: 2026-10-16 -->
+
+- [Simplewall](https://github.com/henrypp/simplewall) — Windows firewall front-end that lets you allow or block app connections using the platform's WFP engine. **Free · Open source · Local/offline · Notify mode prompts on first connection until rules defined.**
+- [LuLu](https://objective-see.org/products/lulu.html) — Free open-source macOS firewall that blocks unknown outgoing connections until you approve them. **Free · Open source · Local/offline · Outbound focus; inbound handled by built-in macOS firewall.**
+- [OpenSnitch](https://opensnitch.io/) — Application-level firewall for Linux that prompts you or applies rules when programs reach the network. **Free · Open source · Local/offline · Per-connection prompts can be noisy until tuned.**
+- [Portmaster](https://safing.io/portmaster) — Free application firewall that monitors connections, blocks trackers and shows network activity history. **Free · Open source · Local/offline · Network history, bandwidth graphs and the SPN privacy VPN are paid.**
+
+### Security hardening and auditing
+<!-- verified: 2026-10-16 -->
+
+- [Lynis](https://cisofy.com/lynis/) — Command-line security auditing tool that scans Linux and macOS hosts and reports hardening improvements. **Free · Open source · Local/offline · Community edition free; compliance reporting and enterprise support paid.**
+- [O&O ShutUp10](https://www.oo-software.com/en/shutup10) — Portable freeware that gathers Windows 10 and 11 privacy settings so telemetry and data sharing can be disabled. **Free · Local/offline · Apply at your own risk; paid Premium re-enforces settings after updates.**
+
 ## Computer and Operating-System Utilities
 
 ### Windows utilities
+<!-- verified: 2026-10-16 -->
 
 - [7-Zip](https://www.7-zip.org/) — High-ratio file archiver supporting 7z, ZIP, RAR and nearly every container format. **Open source · dated interface.**
 - [PowerToys](https://github.com/microsoft/PowerToys) — Microsoft's power-user toolkit: FancyZones window manager, Run launcher, clipboard history, file rename and more. **Open source · Windows only.**
@@ -1084,7 +1489,17 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Recuva](https://www.ccleaner.com/recuva) — Recovers accidentally deleted files from drives, cards and recycle bins. **Free tier · paid Professional version exists.**
 - [Process Explorer](https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer) — Advanced Task Manager replacement showing detailed process, handle and DLL information. **Free · part of Sysinternals.**
 
+- [Process Monitor](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) — Real-time Windows tool that logs file, registry, process and network activity to troubleshoot problems. **Free · Local/offline · Huge event volume; filters needed.**
+- [Autoruns](https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns) — Shows every program that starts automatically with Windows so you can safely disable unwanted entries. **Free · Local/offline · Disabling the wrong entry can break startup programs.**
+- [Rufus](https://rufus.ie) — Creates bootable USB drives from ISO images with options for UEFI, NTFS and unattended Windows installs. **Free · Open source · Local/offline · Windows-only.**
+- [Ventoy](https://www.ventoy.net) — Boots ISO files straight from a USB drive so you can store many images and pick one at startup. **Free · Open source · Local/offline · A few exotic/old ISOs may need special boot flags.**
+- [HxD](https://mh-nexus.de/en/hxd/) — Hex and disk editor for Windows that edits files, memory and raw drives with checksums and comparisons. **Free · Local/offline · Editing raw disks/memory can corrupt data if careless.**
+- [ImHex](https://github.com/WerWolv/ImHex) — Pattern-aware hex editor with data analysis, structure dissection and scripting for binary data. **Free · Open source · Local/offline · Learning curve, especially the pattern language.**
+- [HWiNFO](https://www.hwinfo.com/) — Deep hardware analyzer for Windows reporting sensors, temperatures, voltages and component details in real time. **Free · Local/offline · Free for personal use · Free for personal, non-commercial use.**
+- [Scoop](https://scoop.sh/) — Command-line installer for Windows that adds apps without admin prompts, UAC dialogs or PATH clutter. **Free · Open source · Local/offline · Primarily scriptable/portable apps; GUI apps via community buckets.**
+
 ### Linux and macOS utilities
+<!-- verified: 2026-10-16 -->
 
 - [Stacer](https://github.com/oguzhaninan/Stacer) — System optimizer and monitoring dashboard for Linux with cleanup and startup management. **Open source.**
 - [Timeshift](https://github.com/linuxmint/timeshift) — System restore and backup tool for Linux using rsync or Btrfs snapshots. **Open source.**
@@ -1092,7 +1507,12 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [AppCleaner](https://freemacsoft.net/appcleaner/) — Finds and removes apps and their leftover files on macOS. **Free · macOS only.**
 - [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) — Monitors S.M.A.R.T. health, temperature and power-on hours for your drives. **Open source · mainly Windows.**
 
+- [Stats](https://github.com/exelban/stats) — Menu-bar system monitor for macOS showing CPU, GPU, memory, disk, network, battery and sensor readings. **Free · Open source · Local/offline · Some modules add overhead; fan control unmaintained.**
+- [Homebrew](https://brew.sh/) — Package manager for macOS and Linux that installs and updates command-line tools from the terminal. **Free · Open source · Requires terminal comfort.**
+- [btop](https://github.com/aristocratos/btop) — Resource monitor with a graphical terminal interface for CPU, memory, disks, network and processes. **Free · Open source · Local/offline · Terminal only; true color recommended.**
+
 ### Remote desktop, virtualization and network monitoring
+<!-- verified: 2026-10-16 -->
 
 - [RustDesk](https://rustdesk.com/) — Self-hostable remote desktop with end-to-end encryption and cross-platform clients. **Open source · public relay servers are rate-limited.**
 - [VirtualBox](https://www.virtualbox.org/) — General-purpose desktop hypervisor for running multiple guest operating systems. **Open source · guest support is limited on Apple Silicon.**
@@ -1101,9 +1521,35 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [LibreNMS](https://www.librenms.org/) — Self-hosted network monitoring with auto-discovery, alerting and device dashboards. **Open source · requires your own server.**
 - [Zabbix](https://www.zabbix.com/) — Enterprise-grade monitoring for hosts, services, metrics and thresholds with webhook alerts. **Open source · support is paid.**
 
+- [QEMU](https://www.qemu.org) — Generic open-source machine emulator and virtualizer that runs whole OS images or single programs. **Free · Open source · Local/offline · CLI-oriented; desktop users pair with libvirt or a GUI front-end.**
+
+### Terminal emulators
+<!-- verified: 2026-10-16 -->
+
+- [Windows Terminal](https://github.com/microsoft/terminal) — Modern Windows terminal hosting PowerShell, CMD and WSL in customizable tabs and panes. **Free · Open source · Local/offline · Windows 10 or later.**
+- [Alacritty](https://alacritty.org) — GPU-accelerated terminal emulator focused on speed and simplicity, configured through a plain text file. **Free · Open source · Local/offline · No tabs or splits by design; pair with tmux.**
+- [kitty](https://sw.kovidgoyal.net/kitty/) — Fast GPU-based terminal with tabs, splits, ligatures and remote control over a scriptable protocol. **Free · Open source · Local/offline · Configured via text config file.**
+- [Ghostty](https://ghostty.org) — Cross-platform terminal with a native UI, tabs and splits emphasizing speed and platform integration. **Free · Open source · Local/offline · Younger project; config option names shifted between releases.**
+- [iTerm2](https://iterm2.com) — Feature-rich macOS terminal with search, split panes, tmux integration and a Python scripting API. **Free · Open source · Local/offline · macOS only; optional AI chat window is an add-on.**
+
+### Backup, cloning and partitioning
+<!-- verified: 2026-10-16 -->
+
+- [Clonezilla](https://clonezilla.org) — Bootable tool for full-disk imaging and cloning with many filesystems and encrypted images. **Free · Open source · Local/offline · No live/differential backups; destination must be >= source size.**
+- [GParted](https://gparted.org) — Graphical partition editor that resizes, copies and moves partitions without data loss from bootable media. **Free · Open source · Local/offline · Runs from live media; partitions must be unmounted.**
+- [FreeFileSync](https://www.freefilesync.org) — Compares and synchronizes folders with mirror, update and two-way modes on Windows, macOS and Linux. **Free · Local/offline · Free for personal use · Free for private, personal use; businesses need paid Business edition.**
+- [AOMEI Backupper Standard](https://www.aomeitech.com/ab/standard.html) — Free Windows backup software covering system, disk, partition and file backups plus basic disk cloning. **Free · Local/offline · Free for personal use · Standard free for personal use; advanced cloning/server features paid.**
+
+### Privacy and security focused desktop operating systems
+<!-- verified: 2026-10-16 -->
+
+- [Tails](https://tails.net) — Amnesic live OS on a USB stick that routes all traffic through Tor and leaves no trace on the host. **Free · Open source · Local/offline · Slower browsing through Tor; persistent storage must be configured.**
+- [Qubes OS](https://www.qubes-os.org) — Security-focused OS that isolates separate tasks in virtual machines so one compromise cannot spread. **Free · Open source · Local/offline · Demands capable hardware and a learning curve.**
+
 ## Education, Research and Knowledge
 
 ### Free online courses and interactive learning
+<!-- verified: 2026-10-16 -->
 
 - [Khan Academy](https://www.khanacademy.org/) — Free lessons and practice exercises from early math through AP college-level subjects. **Free · account required to save progress · donation-supported.**
 - [Coursera](https://www.coursera.org/) — University and company courses you can often audit for free without a certificate. **Free tier · audit access only for many courses; certificates paid.**
@@ -1112,12 +1558,22 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Codecademy](https://www.codecademy.com/) — Interactive, in-browser coding lessons with instant feedback. **Free tier · certificates and projects need Pro.**
 - [Kaggle Learn](https://www.kaggle.com/learn) — Short hands-on micro-courses in Python, ML and data skills, run in free notebooks. **Free · account required.**
 
+- [Class Central](https://www.classcentral.com) — Search engine for free online courses from universities worldwide, aggregating thousands of MOOCs in one place. **Free.**
+- [SWAYAM](https://swayam.gov.in) — India's government-backed platform offering free university courses in eight languages. **Free · Optional paid certification.**
+- [FutureLearn](https://www.futurelearn.com) — Take full university courses free while the course runs. **Limited free · Tests, unlimited access and certificates cost extra.**
+- [Open Yale Courses](https://oyc.yale.edu) — Full introductory Yale courses as free lecture videos and transcripts, no registration, licensed under Creative Commons. **Free.**
+- [Python Tutor](https://pythontutor.com) — Visualizes Python, Java, C++ and JavaScript code execution step by step in the browser. **Free · Core visualizer free without signup.**
+
 ### Mathematics and science resources
+<!-- verified: 2026-10-16 -->
 
 - [Desmos](https://www.desmos.com/) — Graphing calculator with table input, sliders and geometry tools that run in any browser. **Free · account required to save and share work.**
 - [GeoGebra](https://www.geogebra.org/) — Dynamic math app bundling graphing, geometry, algebra, CAS and probability tools. **Open source · cloud saving needs an account.**
 
+- [AoPS Alcumus](https://artofproblemsolving.com/alcumus) — Art of Problem Solving's 100% free adaptive practice system that tailors math questions to each student's ability level. **Free.**
+
 ### Research paper search and discovery
+<!-- verified: 2026-10-16 -->
 
 - [arXiv](https://arxiv.org/) — Open-access preprint server for physics, math, computer science and quantitative research. **Free · preprints are not peer-reviewed.**
 - [Semantic Scholar](https://www.semanticscholar.org/) — AI-assisted academic search with citation context, TLDR summaries and author pages. **Free · coverage varies by field.**
@@ -1127,13 +1583,26 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Google Scholar](https://scholar.google.com/) — Broad scholarly search across articles, theses, books and citations. **Free · institutional access varies.**
 - [Unpaywall](https://unpaywall.org/) — Browser extension that surfaces a legal open-access copy of paywalled papers. **Open source · Free.**
 
+- [JSTOR](https://www.jstor.org) — Free personal account reads eligible journal articles, plus open access and public domain content for anyone. **Limited free · About 10 eligible journal articles every 30 days on a free account.**
+- [Paperity](https://paperity.org) — Aggregates millions of free open-access journal articles and papers across all fields of science and humanities. **Free.**
+- [Inciteful](https://inciteful.xyz) — Free open-source tools that build citation networks around a paper to surface related work, key papers and authors fast. **Free · Open source.**
+- [BASE](https://www.base-search.net) — Academic search engine from Bielefeld University indexing 400M+ scholarly documents, free to search and browse. **Free.**
+- [Dimensions](https://www.dimensions.ai) — Free version of the research database covering 140M+ publications, grants and patents. **Free for personal use · Free access is for personal, non-commercial use.**
+- [The Lens](https://www.lens.org) — Scholarly and patent search spanning 200M+ works, operated as a free public good for researchers and citizens. **Free.**
+
 ### Reference managers and citation generators
+<!-- verified: 2026-10-16 -->
 
 - [Zotero](https://www.zotero.org/) — Collects, organizes and cites research with PDF annotation and browser capture. **Open source · free cloud storage beyond 300MB is paid.**
 - [Mendeley](https://www.mendeley.com/) — Reference manager and PDF annotator from Elsevier with citation plugins. **Free tier · account required, storage capped.**
 - [MyBib](https://www.mybib.com/) — Free citation generator covering thousands of styles with one-click Word and Google Docs export. **Free · account needed to save bibliographies.**
 
+- [Publish or Perish](https://harzing.com/resources/publish-or-perish) — Free citation-analysis software that retrieves and computes impact metrics from Google Scholar data for researchers. **Free.**
+- [JabRef](https://www.jabref.org) — Open-source reference manager for BibTeX and BibLaTeX files with PDF linking, deduplication and word-processor plugins. **Open source · MIT licensed.**
+- [ZoteroBib](https://zbib.org) — Free bibliography builder with 10,000+ citation styles that needs no account and works straight from your browser. **Free · From the Zotero team.**
+
 ### Digital libraries and open textbooks
+<!-- verified: 2026-10-16 -->
 
 - [Project Gutenberg](https://www.gutenberg.org/) — Over 75,000 public-domain ebooks readable online or as free downloads. **Free · public domain.**
 - [Internet Archive](https://archive.org/) — Vast library of books, audio, video, software and web history. **Free · donation-supported; some items have lending restrictions.**
@@ -1141,21 +1610,73 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Open Textbook Library](https://open.umn.edu/opentextbooks) — Peer-reviewed, openly licensed textbooks you can use, adapt and distribute. **Free · open licences.**
 - [LibriVox](https://librivox.org/) — Volunteer-read audiobooks of public-domain literature. **Free · public domain.**
 
+- [OER Commons](https://www.oercommons.org) — Large library of openly licensed teaching and learning materials, free for everyone forever, with course-building tools. **Free.**
+- [LibreTexts](https://libretexts.org) — Open-access platform with hundreds of free, peer-reviewed STEM and humanities textbooks plus the ADAPT homework system. **Free · Nonprofit; remixed under open licenses.**
+- [CK-12](https://www.ck12.org) — Nonprofit platform offering free customizable STEM FlexBooks and adaptive practice for middle and high school students. **Free.**
+- [Standard Ebooks](https://standardebooks.org) — Volunteer-polished public domain ebooks with professional typography, free of cost, DRM and copyright restrictions. **Free · Open source · Public domain sources; tooling open source.**
+- [HathiTrust](https://www.hathitrust.org) — Digitized library of 18M+ books from research libraries; public domain volumes are free to read and download. **Limited free · In-copyright volumes are search-only.**
+- [DOAB](https://www.doabooks.org) — Directory of over 100,000 peer-reviewed open access books; all discovery and access services are free. **Free.**
+- [MERLOT](https://www.merlot.org) — Free curated collection of 110,000+ online learning materials with peer reviews and discipline browsing. **Free.**
+
 ### Language learning and practice
+<!-- verified: 2026-10-16 -->
 
 - [Duolingo](https://www.duolingo.com/) — Gamified lessons with streaks, leagues and AI speaking practice. **Free · ads and heart limits; Super is paid.**
 - [Busuu](https://www.busuu.com/) — Structured language courses with AI conversation practice and feedback. **Free tier · full courses paid.**
 - [Clozemaster](https://www.clozemaster.com/) — Mass-exposure fill-in-the-blank sentences in 50+ languages for building fluency. **Free tier · premium stats paid.**
 
+- [LingQ](https://www.lingq.com) — Free account tier for learning 53 languages from authentic content, turning unknown words into personal vocabulary lists. **Free tier · Free tier limited by active links; premium removes limits.**
+- [Memrise](https://www.memrise.com) — Free core courses with native-speaker video clips and spaced repetition. **Free tier · Offline packs and extra modes are paid.**
+
 ### Quizzes, practice and educational simulators
+<!-- verified: 2026-10-16 -->
 
 - [PhET Interactive Simulations](https://phet.colorado.edu/) — Browser-based physics, chemistry, biology and math simulations you can manipulate. **Open source · no accounts or certificates.**
 - [Kahoot!](https://kahoot.com/) — Create and play game-style quizzes for classrooms, training and parties. **Free tier · hosting and premium question types paid.**
 - [Quizizz](https://quizizz.com/) — Self-paced quizzes and lessons with reports for teachers and trainers. **Free tier · advanced reports and some features paid.**
 
+- [Seterra](https://www.seterra.com) — Free geography map quizzes with 400+ games on countries, capitals, flags, rivers and anatomy, on web and mobile. **Free.**
+- [JeopardyLabs](https://www.jeopardylabs.com) — Build and play Jeopardy-style quiz games online for free with no registration, from millions of shared templates. **Free.**
+
+### Tutoring and homework help
+<!-- verified: 2026-10-16 -->
+
+- [Google Lens](https://lens.google.com) — Point your camera at homework, plants or text to identify problems and objects; absorbed Socratic's step-by-step homework help. **Free.**
+- [Cymath](https://www.cymath.com) — Free step-by-step algebra and calculus solver; type or photograph a problem to see full working, no account required. **Free.**
+- [Schoolhouse.world](https://schoolhouse.world) — Sal Khan's nonprofit offering free one-on-one peer tutoring and SAT preparation with trained volunteer tutors. **Free.**
+
+### Typing, study skills and student planners
+<!-- verified: 2026-10-16 -->
+
+- [TypingClub](https://www.typingclub.com) — Structured touch-typing lessons with games, tests and progress tracking, always free for individual learners. **Free · School/enterprise plans are paid.**
+- [keybr](https://www.keybr.com) — Free typing practice that detects your weak keys and drills them adaptively in the browser. **Free · Open source · Light ads.**
+- [Monkeytype](https://monkeytype.com) — Minimalist open-source typing test with clean layout, custom word lists and detailed speed statistics. **Open source · Free with no account; optional account saves stats.**
+- [keydrills](https://keydrills.com) — 72 free touch-typing lessons and tests with no ads, no account and no premium tier; works offline, progress stored locally. **Free · Local/offline.**
+- [MyStudyLife](https://www.mystudylife.com) — Free student planner replacing the paper diary, tracking classes, homework and exam timetables across all devices. **Free.**
+
+### Learning platforms: classroom and LMS
+<!-- verified: 2026-10-16 -->
+
+- [Moodle](https://moodle.org) — The world's most widely used open-source learning management system; download and self-host free to build complete online courses. **Open source · Hosting and administration are your own.**
+- [Canvas LMS](https://github.com/instructure/canvas-lms) — Instructure's open-source learning management system, free to self-host for schools, universities and developers. **Open source · AGPLv3.**
+- [Google Classroom](https://edu.google.com/workspace-for-education/products/classroom) — Free Education Fundamentals edition lets teachers create classes, assign work and grade at no cost for qualifying schools. **Free · Free tier is Education Fundamentals for qualifying institutions.**
+- [Open edX](https://openedx.org) — Open-source platform powering edX; self-host free to create and run courses. **Open source · Powers tens of thousands of courses.**
+
+### Scientific computing and plotting
+<!-- verified: 2026-10-16 -->
+
+- [JupyterLab](https://jupyter.org) — Web-based notebook environment for code, output, Markdown and widgets across Python, R and Julia. **Free · Open source · Local/offline · BSD-3; local alternative to Google Colab (already listed).**
+- [Spyder](https://spyder-ide.org) — Free scientific Python IDE with variable explorer, debugger, profiler and integrated plot panes. **Free · Open source · Local/offline · MIT licensed.**
+- [GNU Octave](https://www.gnu.org/software/octave/) — High-level language for numerical computation, plotting and scripting, compatible with much MATLAB syntax. **Free · Open source · Local/offline · GPL; runs on Linux, macOS and Windows.**
+- [ParaView](https://www.paraview.org) — Scientific visualization application for analyzing and rendering 2D and 3D data. **Free · Open source · Local/offline · BSD 3-Clause.**
+- [Orange Data Mining](https://orange.biolab.si) — Interactive data-mining and machine-learning toolkit with visual workflows for teaching and research. **Free · Open source · Local/offline · GPL-3.0.**
+- [Pluto.jl](https://plutojl.org) — Reactive Julia notebooks where edits automatically rerun dependent cells, with smart diffing. **Free · Open source · Local/offline · MIT licensed.**
+- [Scilab](https://www.scilab.org) — Free and open-source numerical computation platform for students, academics, engineers and scientists. **Free · Open source · Exact license identifier not confirmed on fetched pages; official site states free and open source (Scilab Trust).**
+
 ## Career, Accessibility, Data and More
 
 ### Career, résumé and interview tools
+<!-- verified: 2026-10-16 -->
 
 - [Reactive Resume](https://github.com/AmruthPillai/Reactive-Resume) — Open-source résumé builder with templates, live preview and ATS-friendly export. **Open source · hosted version needs an account.**
 - [OpenResume](https://github.com/xitanggg/open-resume) — Simple web résumé builder and recruiter-tested ATS checker that exports to PDF. **Open source.**
@@ -1164,7 +1685,15 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Teal](https://www.tealhq.com/) — Job-search tracker, résumé builder and AI tailoring tools in one workspace. **Free tier · advanced AI features need Career Track.**
 - [Pramp](https://www.pramp.com/) — Peer-to-peer mock technical interviews where you both practise and play interviewer. **Free · slots depend on partner availability.**
 
+- [JSON Resume](https://jsonresume.org/) — Open-source JSON resume standard with a CLI that renders themes into a printable PDF. **Free · Open source · Local/offline.**
+- [Careerflow](https://www.careerflow.ai/) — Free job-application tracker with autofill and networking CRM. **Free · Free tier · Premium adds AI mock interviews.**
+- [Simplify](https://simplify.jobs/) — Browser extension autofills job applications from your profile and tracks every application you send. **Free · Free tier · Permanently free plan with unlimited autofill.**
+- [Tech Interview Handbook](https://www.techinterviewhandbook.org/) — Community-maintained handbook of technical and behavioral interview guidance with real sample answers. **Free · Open source.**
+- [Coding Interview University](https://github.com/jwasham/coding-interview-university) — Massive GitHub study plan for software engineering interviews, documented as landing Google and Amazon roles. **Free · Open source · CC BY-SA 4.0.**
+- [Apply Tracker](https://apply-tracker.com/) — Open-source dashboard for tracking applications, referrals and follow-ups with a free-forever plan. **Free · Open source · Free for personal use · MIT.**
+
 ### Accessibility and assistive technology
+<!-- verified: 2026-10-16 -->
 
 - [NVDA](https://github.com/nvaccess/nvda) — Free screen reader that speaks Windows interfaces aloud for blind and low-vision users. **Open source · Windows only.**
 - [Be My Eyes](https://www.bemyeyes.com/) — Connects blind users with sighted volunteers or AI description via live video. **Free · volunteer availability varies by language.**
@@ -1172,6 +1701,17 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Color Oracle](https://colororacle.org/) — Simulates the three common colour-vision deficiencies across your whole screen. **Free · simulation only.**
 - [WAVE](https://wave.webaim.org/) — In-browser accessibility evaluation with visual overlays of errors and contrast issues. **Free · one page at a time.**
 - [The A11Y Project](https://www.a11yproject.com/) — Community checklist, patterns and articles for making websites accessible. **Open source · informal checklist, not an official standard.**
+
+- [Pa11y](https://pa11y.org/) — Automated accessibility testing CLI and CI integration that flags WCAG failures across every page of a site. **Free · Open source · MIT.**
+- [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/) — Upload an image to preview it under deuteranopia, protanopia and tritanopia without sending data anywhere. **Free · Local/offline · Processed locally.**
+- [OpenDyslexic](https://opendyslexic.org/) — Free sans-serif typeface with weighted letter bottoms designed to reduce reading-order confusion. **Free · Open source · SIL OFL 1.1.**
+- [Goblin Tools](https://goblin.tools/) — Tiny AI helpers that break daunting tasks into steps and estimate effort at an adjustable spiciness level. **Free · Open source · Free with optional one-time $5 support tier.**
+- [axe-core](https://github.com/dequelabs/axe-core) — Embeddable engine that finds accessibility bugs automatically inside browsers, tests and CI pipelines. **Free · Open source · MPL-2.0.**
+- [Accessibility Insights](https://accessibilityinsights.io/) — Microsoft's free web and Windows assessors walk developers step by step through manual accessibility checks. **Free · Open source.**
+- [Rewordify](https://rewordify.com/) — Paste dense text and it highlights hard words with simpler alternatives students can actually read. **Free · Ad-supported, no account.**
+- [SpreadTheSign](https://www.spreadthesign.com/) — Dictionary of sign-language handshapes across 14 languages with slow-motion video clips for every word. **Free.**
+- [Amara](https://amara.org/) — Collaborative subtitle editor and public captioning tool for making videos accessible at no cost. **Free · Open source · Basic plan free for unlimited public videos.**
+- [Orca Screen Reader](https://orca.gnome.org/) — Screen reader for GNOME Linux desktops that speaks interfaces, terminals and browsers aloud for blind users. **Free · Open source.**
 
 ### Public datasets and open data
 
@@ -1206,7 +1746,22 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) — Directory of software you can run on your own server instead of paying a vendor. **Open source.**
 - [LinuxLinks](https://www.linuxlinks.com/) — Directory of Linux software, alternatives and hidden gems across categories. **Free.**
 
+### Health, finance and everyday organization
+<!-- verified: 2026-10-16 -->
+
+- [MedTimer](https://github.com/Futsch1/medTimer) — Android medication reminder that logs every dose locally and exports adherence charts to share with your doctor. **Free · Open source · Local/offline · MIT; no ads or tracking.**
+- [GnuCash](https://www.gnucash.org/) — Double-entry personal accounting app that tracks investments, debts and budgets on your own machine. **Free · Open source · Local/offline · GPL.**
+- [Money Manager Ex](https://moneymanagerex.org/) — Cross-platform expense manager with budgeting, investment tracking and one-click account reconciliation. **Free · Open source · Local/offline · GPL-3.0.**
+- [Invoice Ninja](https://www.invoiceninja.com/) — Send invoices, track expenses and accept payments. **Free · Free tier · Hosted free plan caps at 10 clients; self-hosting removes the limit.**
+- [Wave Financial](https://www.waveapps.com/) — Free invoicing, accounting and receipt scanning for freelancers. **Free · Free for personal use · Payments and payroll are paid add-ons; payments limited to U.S. and Canada.**
+- [Vertex42](https://www.vertex42.com/) — Directory of professionally formatted Excel and Google Sheets budget, invoice and amortization templates. **Free · A few link to clearly marked paid add-ons.**
+- [Splitwise](https://www.splitwise.com/) — Shared-expense ledger that simplifies group bills and shows exactly who owes whom. **Free · Free for personal use · Pro adds unlimited history and currency conversion.**
+- [Wanderlog](https://wanderlog.com/) — Trip planner combining itinerary, reservations, maps and collaborative lists in one shareable link. **Free · Free tier · Pro unlocks offline access and auto-import.**
+- [Medito](https://meditofoundation.org/) — Nonprofit meditation app with full courses and daily packs, explicitly with no ads or subscriptions. **Free · Open source · Free for personal use · AGPL-3.0.**
+- [Microsoft Math Solver](https://math.microsoft.com/) — Snap a handwritten or typed math problem to get step-by-step solutions, graphs and similar practice questions. **Free.**
+
 ## Hidden Gems
+<!-- verified: 2026-10-16 -->
 
 Lesser-known tools that quietly solve a real problem. All verified to the same standard as the main directory.
 
@@ -1230,6 +1785,16 @@ Lesser-known tools that quietly solve a real problem. All verified to the same s
 - [Baserow](https://baserow.io/) — Open-source no-code database and Airtable alternative you can self-host or use free in the cloud. **Open source · Free tier.**
 - [Mealie](https://mealie.io/) — Self-hosted recipe manager and meal planner with import from any recipe site. **Open source · self-host.**
 - [Warp](https://www.warp.dev/) — Modern terminal with blocks, AI command search and shared workflows. **Limited free · team and some AI features paid.**
+
+- [RANDOM.ORG](https://www.random.org/) — Generates true random numbers from radio noise captured by antennas pointed at the atmosphere. **Free · Free API tier · Free API tier for basic use.**
+- [World Time Buddy](https://www.worldtimebuddy.com/) — Overlapping-hours clock strip that makes picking a fair meeting time across time zones painless. **Free · One-time Pro upgrade removes ads.**
+- [Every Time Zone](https://everytimezone.com/) — One horizontal bar shows the whole day across zones so you can visually pick a shared working hour. **Free · Pro adds calendar integrations.**
+- [Text to Handwriting](https://saurabhdaware.github.io/text-to-handwriting/) — Type text, pick a pen style and ink color, and get a scanned-looking handwritten page as an image. **Free · Open source · Local/offline · MIT; renders in browser.**
+- [Tables Generator](https://www.tablesgenerator.com/) — Builds clean Markdown, LaTeX, reStructuredText or Excel tables from a spreadsheet-style editor. **Free · Local/offline · Files stay in browser.**
+- [Random User Generator](https://randomuser.me/) — Free API that returns realistic fake user profiles with photos, perfect for seeding demos and tests. **Free · Open source · Free API tier · No key or rate limit; MIT.**
+- [ASCIIArt.eu](https://asciiart.eu/image-to-ascii) — Upload any photo and convert it to ASCII art with adjustable dimensions and character sets. **Free.**
+- [git-cliff](https://git-cliff.org/) — Configurable changelog generator that turns conventional commits into release notes from the command line. **Free · Open source · Local/offline · MIT.**
+- [OpenCommit](https://github.com/di-sukharev/opencommit) — AI commit-message generator that drafts conventional commits from your staged diffs inside the terminal. **Free · Open source · MIT; optional premium tier; basic local usage free.**
 
 ## Popular Free Alternatives
 
@@ -1321,7 +1886,7 @@ Formatting to match:
 
 ## Verification and Maintenance Policy
 
-- **Research date: October 2026.** Every link and label in this release was checked against official pages during this pass.
+- **Research dates: October 2026.** Entries added in the 3.0 expansion (312 of them) were verified against official sources on **2026-10-16**; their sections carry a hidden `<!-- verified: 2026-10-16 -->` marker. Baseline entries were verified during the earlier October 2026 catalog pass. Sources, method and exclusions are documented in [RESEARCH.md](RESEARCH.md).
 - **Official sources first.** Pricing, licensing and limits are taken from the vendor's own site, documentation or repository — not from affiliate blogs.
 - **Re-verification.** Labels are re-checked periodically and whenever an issue is reported. Entries whose free access disappears, that shut down, or that change materially are corrected or removed.
 - **Honesty over volume.** Ambiguous entries are marked as ambiguous or dropped rather than guessed at. A tool that only offers a trial is never presented as free.

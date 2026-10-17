@@ -126,7 +126,8 @@ function build() {
       name: c.name,
       icon: c.icon,
       count: c.toolCount,
-      subcategories: c.subcategories.map((s) => ({ id: s.id, name: s.name, icon: s.icon, count: s.toolCount })),
+      verified: c.verified,
+      subcategories: c.subcategories.map((s) => ({ id: s.id, name: s.name, icon: s.icon, count: s.toolCount, verified: s.verified })),
     })),
     tools: tools.map((t) => ({
       id: t.id,

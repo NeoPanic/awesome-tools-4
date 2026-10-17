@@ -31,7 +31,7 @@
 
   const els = {
     q: $("#q"), searchForm: $("#searchForm"), clearQ: $("#clearQ"),
-    heroSearch: $("#heroSearch"), browseAll: $("#browseAllBtn"),
+    heroSlot: $("#heroSearchSlot"), topbarSlot: $("#topbarSearchSlot"),
     home: $("#home"), browse: $("#browse"),
     catTree: $("#catTree"), catFilter: $("#catFilter"),
     allCount: $("#allCount"), favCount: $("#favCount"),
@@ -158,6 +158,13 @@
     state.sort = ["rel", "az", "cat"].includes(p.get("sort")) ? p.get("sort") : "rel";
     state.tool = p.get("tool") || "";
     state.tags = new Set((p.get("tags") || "").split(",").filter(Boolean));
+    // Drop unknown ids from old or mistyped deep links so they land on the
+    // real catalog instead of a silent zero-result state with no visible chip.
+    if (state.cat && !catById.has(state.cat)) { state.cat = ""; state.sub = ""; }
+    if (state.sub && !subById.has(state.sub)) state.sub = "";
+    else if (state.sub && state.cat && subById.get(state.sub).catId !== state.cat) state.sub = "";
+    if (state.tool && !toolById.has(state.tool)) state.tool = "";
+    for (const t of [...state.tags]) if (!labelById.has(t)) state.tags.delete(t);
   }
 
   function hashString() {
@@ -500,6 +507,16 @@
     renderRecent();
   }
 
+  // The single search form lives in the hero on the home screen and moves
+  // into the top bar while browsing — one input, no duplicated controls.
+  function placeSearch() {
+    const home = !isActive();
+    const slot = home ? els.heroSlot : els.topbarSlot;
+    if (slot && els.searchForm.parentElement !== slot) slot.appendChild(els.searchForm);
+    els.searchForm.classList.toggle("in-hero", home);
+    document.body.dataset.view = home ? "home" : "browse";
+  }
+
   // ---------------------------------------------------------------- apply
   function apply(opts) {
     const o = opts || {};
@@ -508,6 +525,7 @@
     const active = isActive();
     els.home.hidden = active;
     els.browse.hidden = !active;
+    placeSearch();
     els.clearQ.hidden = !state.q;
     els.sortSel.value = state.sort;
     const relOpt = els.sortSel.querySelector('option[value="rel"]');
@@ -692,7 +710,6 @@
     els.randomBtn.innerHTML = icon("shuffle");
     $("#repoBtn").innerHTML = icon("git-fork");
     $(".search-icon").innerHTML = icon("search");
-    $(".hero-search-icon").innerHTML = icon("search");
     $(".empty-icon").innerHTML = icon("circle-help");
     els.clearQ.innerHTML = icon("x");
     $$("[data-icon]").forEach((el) => (el.innerHTML = icon(el.dataset.icon)));
@@ -703,14 +720,6 @@
       els.q.blur();
     });
     els.clearQ.addEventListener("click", () => { setQ("", "replace"); els.q.focus(); });
-    els.heroSearch.addEventListener("click", () => els.q.focus());
-    if (els.browseAll) {
-      els.browseAll.addEventListener("click", () => {
-        resetState();
-        state.all = true;
-        apply({ write: "push", focusNav: true });
-      });
-    }
 
     els.brandHome.addEventListener("click", (e) => { e.preventDefault(); resetState(); apply({ write: "push" }); });
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark light">
-  <meta name="description" content="Awesome Tools — a curated directory of 700+ genuinely free, open-source and free-tier tools. Search, filter and discover the right tool in seconds.">
+  <meta name="description" content="Awesome Tools — a curated directory of 1,000+ genuinely free, open-source and free-tier tools. Search, filter and discover the right tool in seconds.">
   <title>Awesome Tools — discover free &amp; open-source tools</title>
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
@@ -20,7 +20,7 @@
     } catch (e) { /* storage blocked -> dark default */ }
   </script>
 </head>
-<body>
+<body data-view="home">
   <a class="skip-link" href="#results">Skip to results</a>
 
   <header class="topbar">
@@ -48,14 +48,7 @@
       <span class="brand-name">Awesome&nbsp;Tools</span>
     </a>
 
-    <form class="search" id="searchForm" role="search" autocomplete="off">
-      <label class="sr-only" for="q">Search all tools</label>
-      <span class="search-icon" aria-hidden="true"></span>
-      <input id="q" name="q" type="search" placeholder="Search tools… (try “image compression”)"
-             spellcheck="false" autocapitalize="off">
-      <button type="button" class="search-clear" id="clearQ" aria-label="Clear search" hidden></button>
-      <kbd class="search-kbd" aria-hidden="true">/</kbd>
-    </form>
+    <div class="search-slot" id="topbarSearchSlot"></div>
 
     <div class="topbar-actions">
       <button class="icon-btn" id="randomBtn" aria-label="Show a random tool" title="Random tool (surprise me)"></button>
@@ -107,15 +100,17 @@
             A carefully curated directory of genuinely free, open-source and free-tier tools —
             every entry verified against its official site, with the limits written down.
           </p>
-          <button class="hero-search" id="heroSearch" type="button">
-            <span class="hero-search-icon" aria-hidden="true"></span>
-            <span>Search all tools…</span>
-            <kbd>/</kbd>
-          </button>
+          <div class="search-slot hero-search-slot" id="heroSearchSlot">
+            <form class="search" id="searchForm" role="search" autocomplete="off">
+              <label class="sr-only" for="q">Search all tools</label>
+              <span class="search-icon" aria-hidden="true"></span>
+              <input id="q" name="q" type="search" placeholder="Search 1,000+ tools… (try “image compression”)"
+                     spellcheck="false" autocapitalize="off">
+              <button type="button" class="search-clear" id="clearQ" aria-label="Clear search" hidden></button>
+              <kbd class="search-kbd" aria-hidden="true">/</kbd>
+            </form>
+          </div>
           <dl class="stats" id="stats"></dl>
-          <p class="hero-cta">
-            <button class="btn ghost" id="browseAllBtn" type="button">Browse all tools</button>
-          </p>
         </div>
 
         <section class="home-block" aria-labelledby="catsTitle">

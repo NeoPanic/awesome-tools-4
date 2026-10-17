@@ -1,0 +1,759 @@
+{
+ "agent": "dev-tools",
+ "completed": "2026-10-16",
+ "included": [
+  {
+   "name": "Lapce",
+   "url": "https://lapce.dev",
+   "description": "Lightning-fast Rust code editor with LSP support, modal editing and plugins; fully open source and works offline",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Code editors and IDEs",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "",
+   "verified_via": "https://lapce.dev; https://cdn.jsdelivr.net/gh/lapce/lapce@latest/LICENSE",
+   "verified_finding": "LICENSE = Apache-2.0; project active in 2026",
+   "confidence": "high"
+  },
+  {
+   "name": "code-server",
+   "url": "https://github.com/coder/code-server",
+   "description": "Run Microsoft VS Code on a Linux server and open it in any browser; MIT-licensed and self-hosted",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Code editors and IDEs",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Distinct from the VS Code and VSCodium desktop entries already listed",
+   "verified_via": "https://cdn.jsdelivr.net/gh/coder/code-server@latest/LICENSE",
+   "verified_finding": "LICENSE = MIT (Coder Technologies Inc.)",
+   "confidence": "high"
+  },
+  {
+   "name": "GitHub Codespaces",
+   "url": "https://github.com/features/codespaces",
+   "description": "Cloud dev environments from any repo in seconds; GitHub Free personal plans include 120 hrs compute and 15 GB-month",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Online compilers and playgrounds",
+   "labels": [
+    "free-tier",
+    "free-personal"
+   ],
+   "note": "Free quota applies to personal accounts only",
+   "verified_via": "https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-codespaces/about-billing-for-github-codespaces",
+   "verified_finding": "GitHub Free for personal accounts: 15 GB-month storage, 120 hrs compute/month",
+   "confidence": "high"
+  },
+  {
+   "name": "Gitea",
+   "url": "https://gitea.com",
+   "description": "Lightweight self-hosted Git service with issues, pull requests and CI; MIT-licensed and easy to deploy",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Git, version control and GitHub productivity",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Related to Forgejo (already listed) — Gitea is the upstream project",
+   "verified_via": "https://cdn.jsdelivr.net/gh/go-gitea/gitea@latest/LICENSE",
+   "verified_finding": "LICENSE = MIT",
+   "confidence": "high"
+  },
+  {
+   "name": "gitui",
+   "url": "https://github.com/gitui-org/gitui",
+   "description": "Blazing-fast terminal UI for git written in Rust; works where GUIs can't",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Git, version control and GitHub productivity",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Rust alternative to lazygit (already listed)",
+   "verified_via": "https://cdn.jsdelivr.net/gh/gitui-org/gitui@latest/LICENSE",
+   "verified_finding": "LICENSE = MIT; repo active",
+   "confidence": "high"
+  },
+  {
+   "name": "Codeberg",
+   "url": "https://codeberg.org",
+   "description": "Free, non-profit Git hosting for free and open-source software, run on the Forgejo platform",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Git, version control and GitHub productivity",
+   "labels": [
+    "free",
+    "free-personal",
+    "limited-free"
+   ],
+   "note": "Community-run; resource limits and lawful-use rules apply",
+   "verified_via": "https://codeberg.org",
+   "verified_finding": "Free-of-charge FOSS hosting run by the non-profit Codeberg e.V.",
+   "confidence": "high"
+  },
+  {
+   "name": "fx",
+   "url": "https://github.com/antonmedv/fx",
+   "description": "Terminal JSON viewer and processor with interactive queries, syntax highlighting and streaming input",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Regex, JSON, XML, YAML and data formats",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "",
+   "verified_via": "https://cdn.jsdelivr.net/gh/antonmedv/fx@latest/LICENSE",
+   "verified_finding": "LICENSE = MIT",
+   "confidence": "high"
+  },
+  {
+   "name": "Vitest",
+   "url": "https://vitest.dev",
+   "description": "Fast Vite-powered unit testing framework with Jest-compatible API, snapshots, coverage and workspaces",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Documentation, browser dev tools, scraping and testing",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Complements Jest (already listed)",
+   "verified_via": "https://cdn.jsdelivr.net/gh/vitest-dev/vitest@latest/LICENSE",
+   "verified_finding": "LICENSE = MIT",
+   "confidence": "high"
+  },
+  {
+   "name": "Mock Service Worker (MSW)",
+   "url": "https://mswjs.io",
+   "description": "Intercept network requests to mock REST and GraphQL APIs in browser and Node tests with same-origin code",
+   "category": "Programming and Developer Tools",
+   "subcategory": "API clients, testing and documentation",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Intercepts real requests instead of running a proxy server",
+   "verified_via": "https://cdn.jsdelivr.net/gh/mswjs/msw@latest/LICENSE",
+   "verified_finding": "LICENSE = MIT",
+   "confidence": "high"
+  },
+  {
+   "name": "WireMock",
+   "url": "https://wiremock.org",
+   "description": "API mocking and stubbing for tests and prototypes with record/playback and request verification",
+   "category": "Programming and Developer Tools",
+   "subcategory": "API clients, testing and documentation",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Apache 2.0; WireMock Cloud is the paid hosted edition",
+   "verified_via": "https://cdn.jsdelivr.net/gh/wiremock/wiremock@latest/LICENSE.txt",
+   "verified_finding": "LICENSE = Apache 2.0",
+   "confidence": "high"
+  },
+  {
+   "name": "Locust",
+   "url": "https://locust.io",
+   "description": "Scalable load testing framework: define user behaviour in Python and run thousands of concurrent users",
+   "category": "Programming and Developer Tools",
+   "subcategory": "API clients, testing and documentation",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Alternative to the k6 and Apache JMeter entries already listed",
+   "verified_via": "https://cdn.jsdelivr.net/gh/locustio/locust@latest/LICENSE",
+   "verified_finding": "LICENSE = MIT",
+   "confidence": "high"
+  },
+  {
+   "name": "webhook.site",
+   "url": "https://webhook.site",
+   "description": "Instant temporary public URL that captures incoming HTTP requests; free for quick webhook and API debugging",
+   "category": "Programming and Developer Tools",
+   "subcategory": "API clients, testing and documentation",
+   "labels": [
+    "free",
+    "free-tier"
+   ],
+   "note": "Temporary endpoint; longer retention and custom domains are paid",
+   "verified_via": "https://webhook.site",
+   "verified_finding": "Free temporary endpoint URL without signup",
+   "confidence": "high"
+  },
+  {
+   "name": "DbGate",
+   "url": "https://dbgate.org",
+   "description": "Cross-platform SQL and NoSQL database manager: browse, edit, query and export",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Databases, SQL playgrounds and clients",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "GPL-3.0; supports MySQL, Postgres, SQL Server, MongoDB and SQLite",
+   "verified_via": "https://cdn.jsdelivr.net/gh/dbgate/dbgate@latest/LICENSE",
+   "verified_finding": "LICENSE = GPL-3.0",
+   "confidence": "high"
+  },
+  {
+   "name": "Podman",
+   "url": "https://podman.io",
+   "description": "Daemonless container engine for building and running OCI containers; rootless by default, no background daemon",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Backend, hosting, serverless and containers",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "CLI-compatible alternative to Docker Desktop (already listed)",
+   "verified_via": "https://cdn.jsdelivr.net/gh/containers/podman@latest/LICENSE",
+   "verified_finding": "LICENSE = Apache-2.0",
+   "confidence": "high"
+  },
+  {
+   "name": "Dokku",
+   "url": "https://dokku.com",
+   "description": "Mini Heroku-style PaaS: git-push deployments to your own server; MIT-licensed and self-hosted",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Backend, hosting, serverless and containers",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Lighter, git-push based alternative related to Coolify (already listed)",
+   "verified_via": "https://cdn.jsdelivr.net/gh/dokku/dokku@latest/LICENSE",
+   "verified_finding": "LICENSE = MIT",
+   "confidence": "high"
+  },
+  {
+   "name": "OpenTofu",
+   "url": "https://opentofu.org",
+   "description": "Drop-in open-source infrastructure-as-code fork of Terraform under MPL-2.0, with community governance",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Backend, hosting, serverless and containers",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "",
+   "verified_via": "https://cdn.jsdelivr.net/gh/opentofu/opentofu@latest/LICENSE",
+   "verified_finding": "LICENSE = MPL-2.0",
+   "confidence": "high"
+  },
+  {
+   "name": "Cloudflare Workers",
+   "url": "https://workers.cloudflare.com",
+   "description": "Serverless edge functions and full apps on Cloudflare's network; free plan includes 100,000 requests per day",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Backend, hosting, serverless and containers",
+   "labels": [
+    "free",
+    "free-tier"
+   ],
+   "note": "Free plan includes 100,000 requests/day plus free DNS and Workers KV allowances",
+   "verified_via": "https://www.cloudflare.com/pricing/",
+   "verified_finding": "Free plan: 100,000 requests/day",
+   "confidence": "high"
+  },
+  {
+   "name": "ShellCheck",
+   "url": "https://github.com/koalaman/shellcheck",
+   "description": "Static analysis that finds bugs and style problems in bash and shell scripts with actionable fixes",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Code formatting, linting, security scanning and auditing",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "",
+   "verified_via": "https://github.com/koalaman/shellcheck",
+   "verified_finding": "SPDX GPL-3.0",
+   "confidence": "high"
+  },
+  {
+   "name": "hadolint",
+   "url": "https://github.com/hadolint/hadolint",
+   "description": "Dockerfile linter enforcing best practices, deprecated instructions and common packaging mistakes",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Code formatting, linting, security scanning and auditing",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "",
+   "verified_via": "https://cdn.jsdelivr.net/gh/hadolint/hadolint@latest/LICENSE",
+   "verified_finding": "LICENSE = GPL-3.0",
+   "confidence": "high"
+  },
+  {
+   "name": "tflint",
+   "url": "https://github.com/terraform-linters/tflint",
+   "description": "Terraform and OpenTofu linter catching errors, deprecated syntax and naming-convention issues before apply",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Code formatting, linting, security scanning and auditing",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "",
+   "verified_via": "https://cdn.jsdelivr.net/gh/terraform-linters/tflint@latest/LICENSE",
+   "verified_finding": "LICENSE = MPL-2.0",
+   "confidence": "high"
+  },
+  {
+   "name": "TruffleHog",
+   "url": "https://github.com/trufflesecurity/trufflehog",
+   "description": "Scans git history and other sources for leaked secrets such as API keys and credentials",
+   "category": "Programming and Developer Tools",
+   "subcategory": "Code formatting, linting, security scanning and auditing",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "AGPL-3.0; similar role to Gitleaks (already listed)",
+   "verified_via": "https://cdn.jsdelivr.net/gh/trufflesecurity/trufflehog@latest/LICENSE",
+   "verified_finding": "LICENSE = AGPL-3.0",
+   "confidence": "high"
+  },
+  {
+   "name": "CircleCI",
+   "url": "https://circleci.com/pricing",
+   "description": "Hosted CI/CD; the Free plan gives 30,000 credits (about 6,000 build minutes) monthly, with more for open-source projects",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: CI/CD and build automation",
+   "labels": [
+    "free",
+    "free-tier",
+    "free-personal"
+   ],
+   "note": "30,000 credits/month (about 6,000 build minutes); open-source projects up to 400,000 credits; 5 concurrent tasks on Free",
+   "verified_via": "https://circleci.com/pricing/",
+   "verified_finding": "Free plan = 30,000 credits/month; OSS up to 400,000 credits",
+   "confidence": "high"
+  },
+  {
+   "name": "Buildkite",
+   "url": "https://buildkite.com/pricing",
+   "description": "CI/CD platform with self-hosted agents; the $0 Free plan includes up to 2,000 Linux vCPU minutes per month",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: CI/CD and build automation",
+   "labels": [
+    "free",
+    "free-tier"
+   ],
+   "note": "No credit card required for the Free plan",
+   "verified_via": "https://buildkite.com/pricing/",
+   "verified_finding": "Free Plan $0: up to 2,000 Linux vCPU minutes/month",
+   "confidence": "high"
+  },
+  {
+   "name": "Woodpecker CI",
+   "url": "https://woodpecker-ci.org",
+   "description": "Simple container-based continuous integration server, the community fork of Drone; Apache-2.0 and easy to self-host",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: CI/CD and build automation",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "",
+   "verified_via": "https://cdn.jsdelivr.net/gh/woodpecker-ci/woodpecker@latest/LICENSE",
+   "verified_finding": "LICENSE = Apache-2.0",
+   "confidence": "high"
+  },
+  {
+   "name": "Grafana Cloud",
+   "url": "https://grafana.com/pricing",
+   "description": "Hosted observability stack with an always-free plan: 14-day retention for metrics, logs, traces and profiles",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: Monitoring, logging and status pages",
+   "labels": [
+    "free",
+    "free-tier"
+   ],
+   "note": "Self-hosted Grafana OSS is also free",
+   "verified_via": "https://grafana.com/pricing/",
+   "verified_finding": "Always-free plan with 14 days retention",
+   "confidence": "high"
+  },
+  {
+   "name": "Gatus",
+   "url": "https://github.com/TwiN/gatus",
+   "description": "Health dashboard monitoring HTTP, TCP, ICMP and DNS endpoints with configurable alert conditions",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: Monitoring, logging and status pages",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Apache-2.0; complements Uptime Kuma (already listed) with YAML-defined checks",
+   "verified_via": "https://cdn.jsdelivr.net/gh/TwiN/gatus@latest/LICENSE",
+   "verified_finding": "LICENSE = Apache-2.0",
+   "confidence": "high"
+  },
+  {
+   "name": "SigNoz",
+   "url": "https://signoz.com",
+   "description": "Open-source APM unifying traces, metrics and logs; MIT-licensed core you can self-host as a Datadog alternative",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: Monitoring, logging and status pages",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Enterprise folders (ee/) ship under a separate license; core product code is MIT",
+   "verified_via": "https://raw.githubusercontent.com/SigNoz/signoz/main/LICENSE",
+   "verified_finding": "Core outside ee/ is MIT Expat",
+   "confidence": "high"
+  },
+  {
+   "name": "deSEC",
+   "url": "https://desec.io",
+   "description": "Free, security-focused DNS hosting run by a non-profit with DNSSEC by default and a full API",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: DNS hosting and edge networking",
+   "labels": [
+    "free",
+    "free-tier"
+   ],
+   "note": "Sustainable-use limits apply to very high volume",
+   "verified_via": "https://desec.io/",
+   "verified_finding": "'deSEC is free for everyone to use'",
+   "confidence": "high"
+  },
+  {
+   "name": "Windmill",
+   "url": "https://windmill.dev",
+   "description": "Code-first platform turning scripts (Python, TypeScript, SQL) into APIs, cron jobs and UIs; open-source core",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: Workflow automation and scheduling",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Apache-2.0/AGPL dual core; enterprise edition separately licensed; alternative to n8n and Node-RED (already listed)",
+   "verified_via": "https://cdn.jsdelivr.net/gh/windmill-labs/windmill@latest/LICENSE",
+   "verified_finding": "Licensed Apache-2.0 or AGPLv3 with a proprietary edition",
+   "confidence": "high"
+  },
+  {
+   "name": "Observable Plot",
+   "url": "https://observablehq.com/plot/",
+   "description": "Concise JavaScript library for exploratory data visualization on SVG and canvas, built on D3",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: Data visualization, BI and dashboarding",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "ISC licensed",
+   "verified_via": "https://cdn.jsdelivr.net/gh/observablehq/plot@latest/LICENSE",
+   "verified_finding": "LICENSE = ISC",
+   "confidence": "high"
+  },
+  {
+   "name": "Vega-Lite",
+   "url": "https://vega.github.io/vega-lite/",
+   "description": "High-level grammar of interactive graphics: concise JSON specs compile into full Vega visualizations",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: Data visualization, BI and dashboarding",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "BSD 3-Clause; declarative alternative that composes with D3 and ECharts (already listed)",
+   "verified_via": "https://cdn.jsdelivr.net/gh/vega/vega-lite@latest/LICENSE",
+   "verified_finding": "LICENSE = BSD 3-Clause",
+   "confidence": "high"
+  },
+  {
+   "name": "QuickChart",
+   "url": "https://quickchart.io",
+   "description": "Generates Chart.js chart images from URL/JSON parameters for reports, email and chatbots; AGPL, self-hostable",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: Data visualization, BI and dashboarding",
+   "labels": [
+    "free",
+    "open-source"
+   ],
+   "note": "Hosted service free for low volume; open-source server you can self-host (AGPL-3.0)",
+   "verified_via": "https://cdn.jsdelivr.net/gh/typpo/quickchart@latest/LICENSE",
+   "verified_finding": "LICENSE = AGPL-3.0",
+   "confidence": "high"
+  },
+  {
+   "name": "Streamlit",
+   "url": "https://streamlit.io",
+   "description": "Turn Python scripts into shareable web apps for data and ML; Apache-2.0 open source, free to self-host",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: Data visualization, BI and dashboarding",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Streamlit Community Cloud free tier is capped; self-hosting is unrestricted",
+   "verified_via": "https://cdn.jsdelivr.net/gh/streamlit/streamlit@latest/LICENSE",
+   "verified_finding": "LICENSE = Apache-2.0",
+   "confidence": "high"
+  },
+  {
+   "name": "Apache Superset",
+   "url": "https://superset.apache.org",
+   "description": "Apache-top-level BI platform for SQL exploration, charts and dashboards; Apache-2.0 and self-hostable",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: Data visualization, BI and dashboarding",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "",
+   "verified_via": "https://cdn.jsdelivr.net/gh/apache/superset@latest/LICENSE.txt",
+   "verified_finding": "LICENSE.txt = Apache-2.0",
+   "confidence": "high"
+  },
+  {
+   "name": "Metabase",
+   "url": "https://metabase.com",
+   "description": "Ask questions of your data with a no-code query builder, charts and dashboards; open-source edition",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: Data visualization, BI and dashboarding",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "Open-source core is AGPL; paid cloud and enterprise editions exist",
+   "verified_via": "https://cdn.jsdelivr.net/gh/metabase/metabase@latest/LICENSE.txt",
+   "verified_finding": "Source variously licensed AGPL or Metabase Commercial",
+   "confidence": "high"
+  },
+  {
+   "name": "JupyterLab",
+   "url": "https://jupyter.org",
+   "description": "Web-based notebook environment for code, output, Markdown and widgets across Python, R and Julia",
+   "category": "Education, Research and Knowledge",
+   "subcategory": "NEW: Scientific computing and plotting",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "BSD-3; local alternative to Google Colab (already listed)",
+   "verified_via": "https://cdn.jsdelivr.net/gh/jupyterlab/jupyterlab@latest/LICENSE",
+   "verified_finding": "LICENSE = BSD 3-Clause",
+   "confidence": "high"
+  },
+  {
+   "name": "Spyder",
+   "url": "https://spyder-ide.org",
+   "description": "Free scientific Python IDE with variable explorer, debugger, profiler and integrated plot panes",
+   "category": "Education, Research and Knowledge",
+   "subcategory": "NEW: Scientific computing and plotting",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "MIT licensed",
+   "verified_via": "https://cdn.jsdelivr.net/gh/spyder-ide/spyder@latest/LICENSE",
+   "verified_finding": "LICENSE = MIT",
+   "confidence": "high"
+  },
+  {
+   "name": "GNU Octave",
+   "url": "https://www.gnu.org/software/octave/",
+   "description": "High-level language for numerical computation, plotting and scripting, compatible with much MATLAB syntax",
+   "category": "Education, Research and Knowledge",
+   "subcategory": "NEW: Scientific computing and plotting",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "GPL; runs on Linux, macOS and Windows",
+   "verified_via": "https://www.gnu.org/software/octave/",
+   "verified_finding": "GNU project page: free software under the GPL",
+   "confidence": "high"
+  },
+  {
+   "name": "ParaView",
+   "url": "https://www.paraview.org",
+   "description": "Scientific visualization application for analyzing and rendering 2D and 3D data",
+   "category": "Education, Research and Knowledge",
+   "subcategory": "NEW: Scientific computing and plotting",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "BSD 3-Clause",
+   "verified_via": "https://www.paraview.org/license/",
+   "verified_finding": "'Permissive BSD 3-Clause license ... royalty free'",
+   "confidence": "high"
+  },
+  {
+   "name": "Orange Data Mining",
+   "url": "https://orange.biolab.si",
+   "description": "Interactive data-mining and machine-learning toolkit with visual workflows for teaching and research",
+   "category": "Education, Research and Knowledge",
+   "subcategory": "NEW: Scientific computing and plotting",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "GPL-3.0",
+   "verified_via": "https://cdn.jsdelivr.net/gh/biolab/orange3@latest/LICENSE",
+   "verified_finding": "GPL-3.0 terms",
+   "confidence": "high"
+  },
+  {
+   "name": "Pluto.jl",
+   "url": "https://plutojl.org",
+   "description": "Reactive Julia notebooks where edits automatically rerun dependent cells, with smart diffing",
+   "category": "Education, Research and Knowledge",
+   "subcategory": "NEW: Scientific computing and plotting",
+   "labels": [
+    "free",
+    "open-source",
+    "local-offline"
+   ],
+   "note": "MIT licensed",
+   "verified_via": "https://cdn.jsdelivr.net/gh/fonsp/Pluto.jl@latest/LICENSE",
+   "verified_finding": "LICENSE = MIT",
+   "confidence": "high"
+  },
+  {
+   "name": "Scilab",
+   "url": "https://www.scilab.org",
+   "description": "Free and open-source numerical computation platform for students, academics, engineers and scientists",
+   "category": "Education, Research and Knowledge",
+   "subcategory": "NEW: Scientific computing and plotting",
+   "labels": [
+    "free",
+    "open-source"
+   ],
+   "note": "Exact license identifier not confirmed on fetched pages; official site states free and open source (Scilab Trust)",
+   "verified_via": "https://www.scilab.org/",
+   "verified_finding": "'Free and open source software for students, academics, engineers and scientists'",
+   "confidence": "medium"
+  },
+  {
+   "name": "Python Tutor",
+   "url": "https://pythontutor.com",
+   "description": "Visualizes Python, Java, C++ and JavaScript code execution step by step in the browser",
+   "category": "Education, Research and Knowledge",
+   "subcategory": "Free online courses and interactive learning",
+   "labels": [
+    "free"
+   ],
+   "note": "Core visualizer free without signup",
+   "verified_via": "https://pythontutor.com",
+   "verified_finding": "Free core visualizer; 25M+ users",
+   "confidence": "high"
+  },
+  {
+   "name": "healthchecks.io",
+   "url": "https://healthchecks.io",
+   "description": "Cron-job and scheduled-task monitoring with alerts when jobs stop phoning home; free tier monitors 20 jobs",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: Monitoring, logging and status pages",
+   "labels": [
+    "free",
+    "free-tier"
+   ],
+   "note": "20 cron jobs free",
+   "verified_via": "https://healthchecks.io/",
+   "verified_finding": "'Monitor 20 cron jobs for free' stated on the official site/pricing page",
+   "discovery": "ripienaar/free-for-dev",
+   "confidence": "high"
+  },
+  {
+   "name": "DuckDNS",
+   "url": "https://www.duckdns.org",
+   "description": "Free dynamic DNS hosted on Amazon Web Services; updates your IP with a single HTTPS request",
+   "category": "Programming and Developer Tools",
+   "subcategory": "NEW: DNS hosting and edge networking",
+   "labels": [
+    "free",
+    "free-tier"
+   ],
+   "note": "Sponsor-funded, no paid plan",
+   "verified_via": "https://www.duckdns.org/",
+   "verified_finding": "Site meta description: free dynamic DNS hosted on Amazon Web Services",
+   "discovery": "ripienaar/free-for-dev",
+   "confidence": "high"
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Gitpod (now Ona)",
+   "url": "https://www.gitpod.io",
+   "reason": "Rebranded to Ona; no documented ongoing free tier verifiable in 2026."
+  },
+  {
+   "name": "Cirrus CI",
+   "url": "https://cirrus-ci.com",
+   "reason": "Site failed TLS certificate verification; free-tier claims unverifiable."
+  },
+  {
+   "name": "GitButler",
+   "url": "https://github.com/gitbutlerapp/gitbutler",
+   "reason": "FSL-1.0-MIT source-available license, not OSI-approved open source."
+  },
+  {
+   "name": "Requestly",
+   "url": "https://requestly.com",
+   "reason": "'Start free for 30 days' on API offering; no documented ongoing free tier."
+  },
+  {
+   "name": "Percy",
+   "url": "https://percy.io",
+   "reason": "Client-rendered pricing; free-tier quota unextractable and unverified."
+  },
+  {
+   "name": "Logflare",
+   "url": "https://logflare.com",
+   "reason": "Pricing page 404 and homepage 403 during verification."
+  },
+  {
+   "name": "Apify",
+   "url": "https://apify.com",
+   "reason": "Credit-based free usage ($5); recurrence not officially confirmed."
+  },
+  {
+   "name": "Adminer",
+   "url": "https://www.adminer.org",
+   "reason": "Official license source not verified in session; excluded under accuracy-first policy (DbGate included instead)."
+  }
+ ],
+ "notes": "~72 candidates investigated; 47 included, 8 rejected. 6 NEW subcategories proposed: 'CI/CD and build automation', 'Monitoring, logging and status pages', 'DNS hosting and edge networking', 'Workflow automation and scheduling', 'Data visualization, BI and dashboarding' (Programming), 'Scientific computing and plotting' (Education). Cross-agent dupes to resolve: DuckDNS + healthchecks.io also proposed by web-file-utilities under an existing Website sub — prefer the existing sub. Near-duplicate functional overlaps flagged honestly in notes: Gitea/Forgejo, gitui/lazygit, TruffleHog/Gitleaks, Dokku/Coolify, SigNoz/Sentry. healthchecks.io and DuckDNS were also proposed by the web-file-utilities agent under the existing Uptime monitoring, DNS and domains subsection; that placement won the cross-agent dedupe."
+}

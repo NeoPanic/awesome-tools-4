@@ -18,11 +18,12 @@ const EXCLUDED_SECTIONS = new Set([
   "Disclaimer",
 ]);
 
-/** The nine controlled free-access labels from the README label guide. */
+/** The controlled free-access labels from the README label guide. */
 export const ACCESS_LABELS = [
   { id: "free", name: "Free" },
   { id: "open-source", name: "Open source" },
   { id: "free-tier", name: "Free tier" },
+  { id: "free-api-tier", name: "Free API tier" },
   { id: "free-credits", name: "Free credits" },
   { id: "local-offline", name: "Local/offline" },
   { id: "open-weights", name: "Open weights" },
@@ -36,6 +37,7 @@ export const ACCESS_LABELS = [
 const LABEL_RULES = [
   [/^open weights$/i, "open-weights"],
   [/^open source$/i, "open-source"],
+  [/^free api tier$/i, "free-api-tier"],
   [/^free tier( on .+)?$/i, "free-tier"],
   [/^free credits?( daily| on signup)?$/i, "free-credits"],
   [/^free for personal use$/i, "free-personal"],
@@ -109,6 +111,12 @@ export function parseReadme(readmePath = join(ROOT, "README.md")) {
   let subcategory = null;
   let inFence = false;
 
+  // Last review date per section: `<!-- verified: 2026-10-16 -->` markers placed
+  // directly after a heading. Sections without a marker fall back to the month
+  // the catalog was first published, so old entries keep their honest date.
+  const DEFAULT_VERIFIED = "2026-10";
+  const verifiedRe = /^<!--\s*verified:\s*([0-9]{4}-[0-9]{2}(?:-[0-9]{2})?)\s*-->$/;
+
   const entryRe = /^-\s+\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)\s*[-\u2013\u2014]\s+(.+)$/;
   const headingRe = /^(#{2,3})\s+(.+?)\s*$/;
 
@@ -119,6 +127,13 @@ export function parseReadme(readmePath = join(ROOT, "README.md")) {
     }
     if (inFence) continue;
 
+    const v = line.match(verifiedRe);
+    if (v) {
+      if (subcategory) subcategory.verified = v[1];
+      else if (category) category.verified = v[1];
+      continue;
+    }
+
     const h = line.match(headingRe);
     if (h) {
       const level = h[1].length;
@@ -128,12 +143,12 @@ export function parseReadme(readmePath = join(ROOT, "README.md")) {
           category = null;
           subcategory = null;
         } else {
-          category = { name: title, id: slugify(title), subcategories: [], toolCount: 0 };
+          category = { name: title, id: slugify(title), subcategories: [], toolCount: 0, verified: DEFAULT_VERIFIED };
           sectionIndex.set(title, category);
           subcategory = null;
         }
       } else if (category) {
-        subcategory = { name: title, id: slugify(title), toolCount: 0 };
+        subcategory = { name: title, id: slugify(title), toolCount: 0, verified: DEFAULT_VERIFIED };
         category.subcategories.push(subcategory);
       }
       continue;
@@ -164,6 +179,7 @@ export function parseReadme(readmePath = join(ROOT, "README.md")) {
       tags,
       notes,
       label: bold[2].trim().replace(/\.$/, ""),
+      verified: (subcategory || category).verified,
       categoryId: category.id,
       category: category.name,
       subcategoryId: subcategory ? subcategory.id : null,

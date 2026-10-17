@@ -407,6 +407,7 @@ export const LABEL_ICONS = {
   free: "circle-check",
   "open-source": "git-fork",
   "free-tier": "gauge",
+  "free-api-tier": "plug",
   "free-credits": "sparkles",
   "local-offline": "laptop",
   "open-weights": "package",
