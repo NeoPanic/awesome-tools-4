@@ -350,13 +350,16 @@ body[data-view="browse"] .hero-search-slot { display: none; }
   font-weight: 550;
 }
 .nav-item[aria-current="true"] .nav-icon, .nav-item.active .nav-icon { color: var(--accent-text); }
-.nav-icon { display: flex; color: var(--text-faint); font-size: 16px; align-self: center; }
+/* Icons align to the FIRST line of a wrapped label, so multi-line rows
+   keep one consistent rhythm instead of centring the icon across the
+   whole 2–3 line block. Counts stay baseline-aligned with the label. */
+.nav-icon { display: flex; color: var(--text-faint); font-size: 16px; align-self: flex-start; margin-top: 3px; }
 .nav-icon svg { width: 16px; height: 16px; }
 /* Category names wrap — never truncate (3 lines covers the longest names). */
 .nav-label {
   flex: 1;
   min-width: 0;
-  line-height: 1.35;
+  line-height: 1.3;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -371,6 +374,9 @@ body[data-view="browse"] .hero-search-slot { display: none; }
   padding-left: 6px;
 }
 .nav-item[aria-current="true"] .nav-count, .nav-item.active .nav-count { color: var(--accent-text); }
+/* Top-level rows reserve the same right-hand column as category rows
+   (expander 26px + 2px gap) so every count lines up vertically. */
+.cat-nav > .nav-item { padding-right: 36px; }
 
 .nav-cat { display: flex; flex-direction: column; gap: 2px; margin-top: 4px; }
 .nav-cat-row { display: flex; align-items: stretch; gap: 2px; }
@@ -451,38 +457,32 @@ body[data-view="browse"] .hero-search-slot { display: none; }
   text-wrap: pretty;
 }
 
-/* inline stat strip: 714 tools · 15 categories · … */
+/* inline stat strip: 1,026 tools · 15 categories · …
+   Kept deliberately quiet so it never competes with the heading or the
+   search field. Numbers carry the weight; labels recede. Whitespace (not
+   a "·" glyph) separates items, so a wrapped line never orphans a dot. */
 .stats {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  margin: 16px 0 0;
+  gap: 3px 22px;
+  margin: 15px 0 0;
   font-variant-numeric: tabular-nums;
 }
 .stats > div {
-  position: relative;
   display: flex;
   align-items: baseline;
-  gap: 6px;
-  padding: 0 15px;
+  gap: 5px;
 }
-.stats > div:first-child { padding-left: 0; }
-.stats > div + div::before {
-  content: "·";
-  position: absolute;
-  left: 0;
-  color: var(--text-faint);
-}
-.stats dd {
-  order: 1;
+.stats .stat-n {
   margin: 0;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 650;
   letter-spacing: -0.01em;
   color: var(--text);
 }
-.stats dt {
-  order: 2;
+.stats .stat-l {
+  margin: 0;
   font-size: 13px;
   color: var(--text-faint);
 }
@@ -505,10 +505,13 @@ body[data-view="browse"] .hero-search-slot { display: none; }
   color: var(--text-faint);
 }
 
-/* category index — a directory table of contents, not a card grid */
+/* category index — a directory table of contents, not a card grid.
+   auto-fit would let the final row collapse to a single stretched column,
+   so the column count is pinned at each breakpoint and rows always settle
+   evenly. */
 .cat-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 44px;
   border-top: 1px solid var(--border);
 }
@@ -543,9 +546,11 @@ body[data-view="browse"] .hero-search-slot { display: none; }
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 12px;
+  gap: 14px;
 }
 .cat-card .cc-name {
+  flex: 1;
+  min-width: 0;
   font-weight: 550;
   font-size: 14.5px;
   line-height: 1.35;
@@ -637,6 +642,14 @@ body[data-view="browse"] .hero-search-slot { display: none; }
 .chip svg { width: 13px; height: 13px; }
 .chip .chip-txt { overflow: hidden; text-overflow: ellipsis; }
 
+/* Recently-viewed shortcuts reuse the chip surface but are visually
+   quieter than the filterable quickfilters — they carry a brand icon and
+   a name, no count, and are pure navigation. */
+.recent-chip { gap: 6px; cursor: pointer; }
+.recent-chip:hover { border-color: var(--border-strong); color: var(--text); }
+.recent-chip svg { width: 13px; height: 13px; color: var(--text-faint); }
+.recent-chip:hover svg { color: var(--text-dim); }
+
 /* quick access-type filters */
 .quickfilters {
   display: flex;
@@ -660,19 +673,33 @@ body[data-view="browse"] .hero-search-slot { display: none; }
   transition: border-color var(--speed) ease, color var(--speed) ease, background var(--speed) ease;
 }
 .qf:hover { border-color: var(--border-strong); color: var(--text); }
+/* Non-color pressed marker (WCAG 1.4.1): a small accent dot appears at the
+   leading edge so selection survives greyscale and color-blind viewing. */
+.qf { position: relative; }
+.qf[aria-pressed="true"]::before {
+  content: "";
+  flex: none;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-left: -3px;
+}
 .qf svg { width: 14px; height: 14px; }
 .qf .qf-n {
   font-size: 11.5px;
   color: var(--text-faint);
   font-variant-numeric: tabular-nums;
 }
+/* Active state uses surface + weight + an inset accent rule rather than a
+   fully amber-tinted pill, so a selected filter stays legible and doesn't
+   shout. Color is never the only signal — aria-pressed drives a marker. */
 .qf[aria-pressed="true"] {
-  background: var(--accent-soft);
-  border-color: var(--accent);
-  color: var(--accent-text);
-  font-weight: 550;
+  background: var(--surface-2);
+  border-color: var(--border-strong);
+  color: var(--text);
+  font-weight: 600;
 }
-.qf[aria-pressed="true"] .qf-n { color: var(--accent-text); }
+.qf[aria-pressed="true"] .qf-n { color: var(--text-dim); font-weight: 600; }
 
 .quick-row .qf { background: var(--surface); }
 
@@ -762,8 +789,10 @@ body[data-view="browse"] .hero-search-slot { display: none; }
   font-size: 12px;
   color: var(--text-faint);
   white-space: normal;
+  /* Notes are separated by the container gap, not a ::before dot. A note
+     that wraps to a second line therefore starts flush instead of
+     inheriting a painted dot at the head of the continuation line. */
 }
-.tag-note::before { content: "·"; margin-right: 6px; color: var(--text-faint); }
 
 .crumb {
   display: inline-flex;
@@ -794,7 +823,11 @@ body[data-view="browse"] .hero-search-slot { display: none; }
 .fav[aria-pressed="true"] { color: var(--accent-text); }
 .fav[aria-pressed="true"] svg { fill: currentColor; }
 
-/* quiet outlined primary action — obvious without shouting */
+/* Quiet secondary action. Neutral at rest so a long result list doesn't
+   become a repeating column of amber pills; the accent only appears on
+   hover/focus, when the row is actually being considered. The destination
+   is still obvious — the tool name is the primary link, and every Open
+   button carries a visible external-link glyph. */
 .open-link {
   display: inline-flex;
   align-items: center;
@@ -802,17 +835,18 @@ body[data-view="browse"] .hero-search-slot { display: none; }
   padding: 5px 11px;
   margin-left: 4px;
   font-size: 13px;
-  font-weight: 600;
-  color: var(--accent-text);
-  background: var(--surface);
+  font-weight: 550;
+  color: var(--text-dim);
+  background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: var(--radius-s);
   white-space: nowrap;
-  transition: background var(--speed) ease, border-color var(--speed) ease;
+  transition: background var(--speed) ease, border-color var(--speed) ease, color var(--speed) ease;
 }
-.open-link:hover {
+.open-link:hover, .open-link:focus-visible {
   background: var(--accent-soft);
   border-color: var(--accent);
+  color: var(--accent-text);
   text-decoration: none;
 }
 .open-link svg { width: 13px; height: 13px; }
@@ -916,6 +950,11 @@ body[data-view="browse"] .hero-search-slot { display: none; }
 /* ---------- responsive ---------- */
 .only-mobile { display: none; }
 
+/* Tablet / narrow laptop: two settled columns. */
+@media (max-width: 1100px) {
+  .cat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 34px; }
+}
+
 @media (max-width: 980px) {
   .shell { grid-template-columns: 1fr; }
   .only-mobile { display: inline-flex; }
@@ -956,20 +995,30 @@ body[data-view="browse"] .hero-search-slot { display: none; }
   #topbarSearchSlot { grid-area: search; }
   #topbarSearchSlot .search { max-width: none; }
   .sidebar { top: 0; }
-  .card { grid-template-columns: auto minmax(0, 1fr); }
-  .card .tile { grid-row: 1; }
+  .card {
+    /* Repeating rows: icon and content in two columns, actions on their
+       own full-width strip. */
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+  .card .tile { grid-row: 1 / span 2; }
+  /* A hairline under every row already separates them, so the actions
+     strip needs no rule of its own — avoids double lines. */
   .card-actions {
     grid-column: 1 / -1;
     grid-row: auto;
-    justify-content: flex-end;
-    border-top: 1px solid var(--border);
-    margin-top: 10px;
-    padding-top: 8px;
-    width: 100%;
+    justify-content: flex-start;
+    margin-top: 8px;
   }
+  .card-actions .open-link { margin-left: auto; }
   .card-meta { grid-column: 2; }
-  .stats > div { padding: 0 12px; }
-  .stats dd { font-size: 14.5px; }
+  /* Single-line items in a wrapping row — whitespace alone separates
+     them, so tighten the gap rather than adding per-item padding. */
+  .stats { gap: 3px 16px; }
+  .stats .stat-n { font-size: 14px; }
+  /* Toolbar stacks here: controls wrap instead of colliding. */
+  .toolbar { gap: 10px; }
+  .toolbar-right { flex-wrap: wrap; gap: 8px 10px; }
+  #clearAll { white-space: nowrap; }
 }
 
 @media (max-width: 480px) {

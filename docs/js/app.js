@@ -226,6 +226,9 @@
       if (!l) continue;
       html += `<span class="tag primary">${icon(l.icon)}${esc(l.name)}</span>`;
     }
+    // Notes are separated by the container gap alone. A CSS ::before dot
+    // would be painted at the head of every wrapped continuation line,
+    // where the gap is the honest signal instead.
     for (const note of t.notes) html += `<span class="tag-note">${esc(note)}</span>`;
     return html;
   }
@@ -273,7 +276,7 @@
       els.showMore.textContent = `Show ${Math.min(PAGE, total - shown)} more (${total - shown} left)`;
     } else els.showMore.hidden = true;
 
-    els.resultCount.innerHTML = `<strong>${total}</strong> of ${TOOLS.length} tools` +
+    els.resultCount.innerHTML = `<strong>${total.toLocaleString("en-US")}</strong> of ${TOOLS.length.toLocaleString("en-US")} tools` +
       (isActive() && total !== TOOLS.length ? " match your filters" : "");
   }
 
@@ -369,6 +372,10 @@
         req.add(l.id);
         return passesTags(x.t, req) ? n + 1 : n;
       }, 0);
+      // Filters that would yield nothing within the current results are
+      // hidden — a wall of "0" chips is noise. Anything already selected
+      // stays visible so it can be cleared.
+      if (count === 0 && !on) return "";
       return `<button class="qf" type="button" data-tag="${esc(l.id)}" aria-pressed="${on}">
         ${icon(l.icon)}<span>${esc(l.name)}</span><span class="qf-n">${count}</span></button>`;
     }).join("");
@@ -469,7 +476,7 @@
       [s.localOffline, "local/offline"],
       [s.freeTier, "free tiers"],
     ]
-      .map(([n, label]) => `<div><dd>${n}</dd><dt>${label}</dt></div>`)
+      .map(([n, label]) => `<div><dt class="stat-n">${Number(n).toLocaleString("en-US")}</dt><dd class="stat-l">${label}</dd></div>`)
       .join("");
 
     els.catGrid.innerHTML = CATALOG.categories.map((c) =>
@@ -477,7 +484,7 @@
         <span class="tile" aria-hidden="true">${icon(c.icon)}</span>
         <span class="cc-body">
           <span class="cc-name">${esc(c.name)}</span>
-          <span class="cc-count">${c.count} tools</span>
+          <span class="cc-count">${Number(c.count).toLocaleString("en-US")} tools</span>
         </span>
       </button>`,
     ).join("");
@@ -495,7 +502,7 @@
     els.recentBlock.hidden = items.length === 0;
     els.recentRow.innerHTML = items
       .map(
-        (t) => `<button class="qf" type="button" data-recent="${esc(t.id)}" title="${esc(t.description)}">
+        (t) => `<button class="chip recent-chip" type="button" data-recent="${esc(t.id)}" title="${esc(t.description)}">
           ${icon(t.icon)}<span>${esc(t.name)}</span></button>`,
       )
       .join("");
@@ -554,6 +561,10 @@
         } else {
           flashTool(state.tool, idx);
         }
+        // Record here rather than in the results click handler so every
+        // route to a tool counts — deep links and recently-viewed chips
+        // included — not just clicks in the results list.
+        recordRecent(state.tool);
       }
     } else {
       // Home view: clear browse controls so no stale state lingers in the DOM.
