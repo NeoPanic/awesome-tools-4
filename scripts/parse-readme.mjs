@@ -15,6 +15,7 @@ const EXCLUDED_SECTIONS = new Set([
   "Privacy and Safety Notes",
   "Contributing",
   "Verification and Maintenance Policy",
+  "License",
   "Disclaimer",
 ]);
 

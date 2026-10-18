@@ -95,7 +95,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
   - [Code formatting, linting, security scanning and auditing](#code-formatting-linting-security-scanning-and-auditing)
   - [Regex, JSON, XML, YAML and data formats](#regex-json-xml-yaml-and-data-formats)
   - [Documentation, browser dev tools, scraping and testing](#documentation-browser-dev-tools-scraping-and-testing)
-  - [CI/CD and build automation](#ci-cd-and-build-automation)
+  - [CI/CD and build automation](#cicd-and-build-automation)
   - [Monitoring, logging and status pages](#monitoring-logging-and-status-pages)
   - [DNS hosting and edge networking](#dns-hosting-and-edge-networking)
   - [Workflow automation and scheduling](#workflow-automation-and-scheduling)
@@ -1786,7 +1786,7 @@ Lesser-known tools that quietly solve a real problem. All verified to the same s
 - [Mealie](https://mealie.io/) — Self-hosted recipe manager and meal planner with import from any recipe site. **Open source · self-host.**
 - [Warp](https://www.warp.dev/) — Modern terminal with blocks, AI command search and shared workflows. **Limited free · team and some AI features paid.**
 
-- [RANDOM.ORG](https://www.random.org/) — Generates true random numbers from radio noise captured by antennas pointed at the atmosphere. **Free · Free API tier · Free API tier for basic use.**
+- [RANDOM.ORG](https://www.random.org/) — Generates true random numbers from radio noise captured by antennas pointed at the atmosphere. **Free · Free API tier · Basic use only.**
 - [World Time Buddy](https://www.worldtimebuddy.com/) — Overlapping-hours clock strip that makes picking a fair meeting time across time zones painless. **Free · One-time Pro upgrade removes ads.**
 - [Every Time Zone](https://everytimezone.com/) — One horizontal bar shows the whole day across zones so you can visually pick a shared working hour. **Free · Pro adds calendar integrations.**
 - [Text to Handwriting](https://saurabhdaware.github.io/text-to-handwriting/) — Type text, pick a pen style and ink color, and get a scanned-looking handwritten page as an image. **Free · Open source · Local/offline · MIT; renders in browser.**
@@ -1891,7 +1891,13 @@ Formatting to match:
 - **Re-verification.** Labels are re-checked periodically and whenever an issue is reported. Entries whose free access disappears, that shut down, or that change materially are corrected or removed.
 - **Honesty over volume.** Ambiguous entries are marked as ambiguous or dropped rather than guessed at. A tool that only offers a trial is never presented as free.
 - **No fabricated metrics.** Nothing here claims stars, users or testing that has not actually happened. Descriptions reflect what the product does, not marketing copy.
-- **What a link check does *not* prove.** Automated checks only confirm a URL responds. They cannot confirm a free plan still exists — always verify current terms yourself.
+- **A live URL is not proof.** Nothing in this repository automatically re-tests these links. A page that loads today does not prove the free plan still exists — always verify current terms yourself.
+
+## License
+
+- **This repository** — the directory below, `docs/`, `research/` and `RESEARCH.md` — is released under the [MIT License](LICENSE). Reuse it, mirror it, fork it.
+- **The tools listed** keep their own licences. A label here is a summary, never a substitute for reading the project's own licence.
+- **Third-party icons** come from [Lucide](https://lucide.dev) (ISC) and [Simple Icons](https://simpleicons.org) (CC0 1.0); see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md). Brand marks belong to their owners.
 
 ## Disclaimer
 

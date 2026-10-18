@@ -1,0 +1,21 @@
+{
+  "name": "awesome-tools",
+  "version": "3.0.0",
+  "private": true,
+  "description": "A curated directory of genuinely free, open-source and free-tier tools, with a searchable static web app.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kritagyadubey/awesome-tools.git"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "parse": "node scripts/parse-readme.mjs",
+    "serve": "npx --yes http-server docs -p 4173"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
