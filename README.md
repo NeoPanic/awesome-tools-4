@@ -1054,6 +1054,10 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Gnumeric](https://gnumeric.org/) — Free open-source spreadsheet application built to replace expensive office suites. **Open source · GPL v2/v3.**
 - [CryptPad](https://github.com/cryptpad/cryptpad) — End-to-end encrypted collaborative documents and office suite; self-hostable or free cloud use. **Open source · AGPL-3.0.**
 
+<!-- verified: 2026-10-21 -->
+- [Glim](https://github.com/NeoPanic/Glim) — macOS viewer for Markdown, PDFs, images, JSON, CSV and source files, with basic text editing. **Free · Open source · macOS only; document and image previews are read-only.**
+<!-- verified: 2026-10-16 -->
+
 ### Distraction-free and Markdown writing
 <!-- verified: 2026-10-16 -->
 
