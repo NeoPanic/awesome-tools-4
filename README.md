@@ -1435,6 +1435,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Mozilla Observatory](https://observatory.mozilla.org/) — Scores your public web server's security headers, TLS and DNS configuration. **Free · scans are rate-limited.**
 - [VirusTotal](https://www.virustotal.com/) — Scans files and URLs against dozens of antivirus engines and sandbox analyses. **Free tier · public uploads are shared with security vendors — never upload sensitive files.**
 - [Nmap](https://nmap.org/) — Network mapper and port scanner for inventorying hosts, services and firewalls on your own networks. **Open source · only scan systems you own or are authorized to test.**
+- [Kilobat CLI](https://github.com/seifip/kilobat-cli) — Monitors network activity and diagnoses connections from a terminal. **Free · Open source (GPL-3.0-only) · macOS 14+; Homebrew build requires Xcode 16+.**
 - [Wireshark](https://www.wireshark.org/) — Network protocol analyzer for inspecting traffic on networks you control. **Open source.**
 - [OWASP ZAP](https://www.zaproxy.org/) — Automated web application security scanner for finding common flaws in your own apps. **Open source.**
 
