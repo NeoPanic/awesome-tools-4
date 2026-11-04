@@ -1680,6 +1680,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 
 - [Reactive Resume](https://github.com/AmruthPillai/Reactive-Resume) — Open-source résumé builder with templates, live preview and ATS-friendly export. **Open source · hosted version needs an account.**
 - [OpenResume](https://github.com/xitanggg/open-resume) — Simple web résumé builder and recruiter-tested ATS checker that exports to PDF. **Open source.**
+- [ResumeInvited](https://resumeinvited.com/) — Online résumé builder with templates, live preview and PDF or editable Word export. **Free · no account required.**
 - [FlowCV](https://flowcv.io/) — Drag-and-drop résumé builder with live preview and clean PDF export. **Free tier · premium templates and some exports paid.**
 - [Resume Worded](https://www.resumeworded.com/) — Instant scoring of résumés and LinkedIn profiles against role-specific benchmarks. **Free tier · deeper reviews and rewrites paid.**
 - [Teal](https://www.tealhq.com/) — Job-search tracker, résumé builder and AI tailoring tools in one workspace. **Free tier · advanced AI features need Career Track.**
