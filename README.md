@@ -923,6 +923,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Zapier](https://zapier.com/) — Connects thousands of apps into automated multi-step workflows. **Free tier · 100 tasks/month, 5 Zaps, 2-step workflows only.**
 - [Make](https://www.make.com/) — Visual scenario builder that routes and transforms data between apps and APIs. **Free tier · monthly operation allowance and active-scenario cap.**
 - [n8n](https://github.com/n8n-io/n8n) — Workflow automation with 400+ integrations and AI agent nodes, free when self-hosted. **Open source · fair-code license · hosted cloud is paid.**
+- [OpenSparta](https://opensparta.com/en) — Telegram marketing workspace for account and proxy management, campaign preparation, and selected-community buying-request monitoring. **Limited free · Account and proxy tools free up to 50 accounts; campaign execution modules require a paid plan after the 14-day full-access trial.**
 
 ### Web hosting and deployment
 <!-- verified: 2026-10-16 -->
