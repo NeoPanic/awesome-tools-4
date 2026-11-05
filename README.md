@@ -1364,6 +1364,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Converter NOW](https://converter-now.web.app) — Open-source unit converter with no ads and no data collection, as a web app and on all major platforms. **Free · Open source · GPL-3.0; internet used only for daily currency rates.**
 - [Calculator.net](https://www.calculator.net) — Roughly 200 free online calculators covering finance, health, math and more, with no registration required. **Free · Ad-supported.**
 - [Epoch Converter](https://www.epochconverter.com) — Converts Unix timestamps to human dates and back with JavaScript in your browser, plus dozens of other date formats. **Free · Uses your computer's clock; client-side.**
+- [Telegram Sponsorship CPM Calculator](https://thinkpad2050.github.io/telegram-sponsorship-cpm-calculator/) — Compares Telegram channel sponsorship quotes with median views from recent comparable posts and estimates CPM. **Free · Open source · MIT · Browser-only.**
 
 ### Developer web utilities
 <!-- verified: 2026-10-16 -->
