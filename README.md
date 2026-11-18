@@ -1306,6 +1306,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [PDF Arranger](https://github.com/pdfarranger/pdfarranger) — Drag-and-drop desktop app for reordering, rotating, cropping and merging PDF pages. **Open source · Local/offline.**
 
 - [PDFsam Basic](https://www.pdfsam.org) — Free and open-source desktop app to split, merge, rotate and encrypt PDFs; files never leave your computer. **Free · Open source · Local/offline · AGPL. PDFsam Visual is a separate 14-day trial and excluded.**
+- [Leafable](https://hidaydream.cloud/leafable/en/?utm_source=github_awesome_tools_4) — Windows PDF app for merging, reordering and compressing documents through a thumbnail sidebar. **Free · Local/offline · Windows 10/11.**
 
 ### OCR and document scanning
 <!-- verified: 2026-10-16 -->
