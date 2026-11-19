@@ -1355,6 +1355,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 
 - [Bulk Resize Photos](https://bulkresizephotos.com) — Unlimited free batch image resizer with no sign-up; images are processed in your browser and never uploaded. **Free · Local/offline · 'Private — no uploading'.**
 - [imgmov Start-Image Resizer](https://imgmov.com/resize-image-for-ai-video) — Crops or pads an image to exact start-frame dimensions and downloads JPEG or PNG with an export-size check. **Free · Local/offline · No account; images stay in the browser, while the parent AI video generator sells paid exports.**
+- [DDS Tools](https://ddstools.com/) — Inspect DDS textures with a free online viewer and convert texture formats locally. **Free viewer · conversion free for up to 10 files at a time · paid batch and ZIP features.**
 - [Ezgif](https://ezgif.com) — Free online GIF and animation maker, converter and optimizer with optional in-browser local processing. **Free · Most tools upload files; Oct 2026 added a Local processing option and WASM bulk optimizer.**
 
 ### QR codes, barcodes and text tools
