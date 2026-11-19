@@ -483,6 +483,8 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [ArtiGram](https://artigram.cafeboon.com) — Free gallery of community-posted interactive HTML artifacts such as small games, calculators and data visualisations, with a remote MCP server. **Free · browsing and searching need no key; posting requires an API key.**
 - [AlternativeTo](https://alternativeto.net/) — Crowdsourced site for finding free or open-source alternatives to any software. **Free.**
 - [OpenAlternative](https://openalternative.co/) — Directory of open-source and self-hostable alternatives to popular paid SaaS products. **Free.**
+- [Tooldex](https://tooldex.app/) — AI tools directory that compares free plans, pricing and usage limits, with dated checks linked to the official pricing pages. **Free · no account required to browse · tools listed keep their own limits and pricing.**
+- [AIHOT Free AI Quotas](https://aihot.news/free-tokens) — Tracks free quotas and time-limited offers from AI model providers, with eligibility, expiry and verification dates for each entry. **Free · no account needed to browse · Chinese-language interface; most offers are China-region · provider signup and eligibility rules still apply.**
 
 ## AI Models and Infrastructure
 
@@ -773,6 +775,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [jq](https://jqlang.github.io/jq/) — Command-line processor for slicing, filtering and reshaping JSON. **Open source.**
 - [yq](https://github.com/mikefarah/yq) — Command-line tool for querying and converting YAML, JSON and XML. **Open source.**
 - [JSONLint](https://jsonlint.com/) — Browser validator and reformatter that pinpoints JSON syntax errors. **Free · ad-supported.**
+- [BestJSON](https://bestjson.com/) — Formats, validates, repairs, compares and converts JSON and JSON5 in the browser, with change previews and JSONPath/jq queries. **Free · no account · files are processed in the browser; the site itself uses analytics.**
 - [JSONCrack](https://jsoncrack.com/) — Visualizes JSON, YAML, CSV and XML as an interactive node graph. **Open source · Free tier online.**
 - [quicktype](https://quicktype.io/) — Generates type definitions and serializers for many languages from sample JSON. **Open source.**
 - [yamllint](https://github.com/adrienverge/yamllint) — Lints YAML files against configurable style and syntax rules from the command line. **Open source.**
@@ -1124,7 +1127,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [MyPaint](https://github.com/mypaint/MyPaint) — Pressure-sensitive painting app with an infinite canvas built for sketching. **Open source.**
 - [PeerBrush](https://peerbrush.com/) — Desktop painting and raster editor with brushes, layers, masks and read/write support for supported layered PSDs. **Free · Open source · Local/offline · GPL-3.0-only; Windows x64, Apple silicon macOS and Ubuntu 24.04 amd64.**
 - [Pixlr](https://pixlr.com/) — Online photo editor (Pixlr E and X) with AI generators, one-click background removal and batch editing. **Limited free · ads · premium tools and exports locked.**
-- [Preview Sheet Studio](https://preview-sheet-studio-1111.crisp-llama-2628.chatgpt.site/) — Arranges static PNG/JPEG images and optional labels into a two- or three-column PNG contact sheet in the browser. **Free · Japanese UI · no account · up to 12 images; 1600×1200 or 1600×1600 output; optional disclosed referral advertising on the site, separate from generated PNGs.**
+- [Preview Sheet Studio](https://preview-sheet-studio-1111.crisp-llama-2628.chatgpt.site/?lang=en) — Arranges static PNG/JPEG images and optional labels into a two- or three-column PNG contact sheet in the browser. **Free · English/Japanese UI; homepage defaults to Japanese and supporting pages are Japanese-only · no account · up to 12 images; 5 MiB each and 20 MiB total; 12 MP each and 36 MP total; 1600×1200 or 1600×1600 output; optional disclosed referral advertising on the site, separate from generated PNGs.**
 
 - [digiKam](https://www.digikam.org) — Advanced open-source photo manager with face recognition, geolocation, RAW editing and batch processing. **Open source.**
 - [ImageOptim](https://imageoptim.com) — Removes metadata and recompresses images losslessly so sites load faster; macOS only. **Open source · GPL v2+; paid Mac App Store build exists.**
@@ -1151,6 +1154,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Polotno Studio](https://studio.polotno.com/) — Browser-based editor for making social graphics, thumbnails and simple presentations. **Free · web-based, no install.**
 - [Wireframe.cc](https://wireframe.cc/) — Minimal wireframing tool that keeps sketches low-fidelity so you focus on ideas. **Limited free · free saves are stored at public URLs.**
 - [Storybook](https://github.com/storybookjs/storybook) — Workshop for building, documenting and testing UI components in isolation. **Open source.**
+- [AppScreen](https://appscreen.pro/) — Browser editor that turns app captures into App Store and Google Play screenshots with device frames, captions and backgrounds. **Free tier · no account · 3 projects and 3 clean slides; Pro is a $9 one-time upgrade; desktop only.**
 
 ### Logo creation, typography and fonts
 
@@ -1256,6 +1260,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [Clipchamp](https://clipchamp.com) — Browser and Microsoft editor with stock assets and a screen recorder. **Free tier · Free tier exports 1080p without watermark; premium stock and 4K are paid.**
 
 - [VHS Filter](https://vhsfilter.com/) — Adds VHS tape effects to photos and short videos in the browser. **Free · video exports up to 1280 pixels wide; no watermark.**
+- [Valmera Color Grader](https://valmera.io/tools/color-grade-video) — Applies a look to a local clip in the browser and exports the grade as a reusable 3D .cube LUT for other editors. **Free · no signup · local export limited to 2 minutes and 1920 px on the long edge · Valmera's hosted AI editing agent requires a subscription.**
 
 ### Screen recording and live streaming
 <!-- verified: 2026-10-16 -->
@@ -1355,6 +1360,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 
 - [Bulk Resize Photos](https://bulkresizephotos.com) — Unlimited free batch image resizer with no sign-up; images are processed in your browser and never uploaded. **Free · Local/offline · 'Private — no uploading'.**
 - [imgmov Start-Image Resizer](https://imgmov.com/resize-image-for-ai-video) — Crops or pads an image to exact start-frame dimensions and downloads JPEG or PNG with an export-size check. **Free · Local/offline · No account; images stay in the browser, while the parent AI video generator sells paid exports.**
+- [FotoApta](https://fotoapta.com/en/) — Crops a document photo to a chosen passport, visa or ID size, checks the framing and lays out a print sheet in the browser. **Free · no account, card or watermark · photos processed on-device · the AI headshot workflow is a separate paid add-on · the issuing authority decides whether a photo is accepted.**
 - [DDS Tools](https://ddstools.com/) — Inspect DDS textures with a free online viewer and convert texture formats locally. **Free viewer · conversion free for up to 10 files at a time · paid batch and ZIP features.**
 - [Ezgif](https://ezgif.com) — Free online GIF and animation maker, converter and optimizer with optional in-browser local processing. **Free · Most tools upload files; Oct 2026 added a Local processing option and WASM bulk optimizer.**
 
@@ -1419,6 +1425,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 
 - [2FAS](https://2fas.com/) — Open-source authenticator that generates two-factor codes and approves logins via a browser extension. **Free · Open source · Password-manager extras are basic; core 2FA is completely free.**
 - [GnuPG](https://gnupg.org/) — Complete OpenPGP implementation for encrypting, signing and verifying files and email from the command line. **Free · Open source · Local/offline · Command-line oriented; graphical frontends installed separately.**
+- [BitTool Signer](https://bittool.com/signer/) — Turns a spare iPhone or Android phone into an air-gapped wallet signer that decodes requests on-device and returns signatures by QR code. **Free · Open source · Local/offline · iOS source MIT-licensed; needs a companion wallet to prepare and broadcast transactions; reviews so far are AI-assisted, not an independent third-party audit.**
 
 ### Privacy-focused browsers and search
 <!-- verified: 2026-10-16 -->
