@@ -893,6 +893,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 
 - [Uptime Kuma](https://uptime.kuma.pet/) — Self-hosted uptime monitor and status pages with dozens of notification channels. **Open source · you must host and maintain it.**
 - [UptimeRobot](https://uptimerobot.com/) — Monitors websites, ports and ping targets with email and integration alerts. **Free tier · 50 monitors on 5-minute checks.**
+- [SiteWatcher](https://github.com/NikKurkov/sitewatcher) — Monitors website uptime, response times, and TLS and domain expiry, with public status pages. **Open source · self-host with Docker Compose.**
 - [Certbot](https://certbot.eff.org/) — Automates issuing and renewing free Let's Encrypt TLS certificates on your server. **Open source · needs shell access to your web server.**
 - [whatsmydns](https://whatsmydns.net/) — Checks DNS records and propagation across resolvers worldwide. **Free · history and bulk checks need an account.**
 - [MXToolbox](https://mxtoolbox.com/) — Diagnostics for DNS, mail delivery, blacklists and domain health. **Free tier · some lookups limited per day.**
