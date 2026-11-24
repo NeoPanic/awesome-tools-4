@@ -1249,6 +1249,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 - [ShareX](https://getsharex.com/) — Windows screen capture, annotation, scrolling screenshots, GIF recording and automation. **Open source · Windows only.**
 - [Flameshot](https://flameshot.org/) — Screenshot tool with inline drawing, blurring and annotation before you share. **Open source · upload targets need a third-party service.**
 - [ScreenToGIF](https://github.com/NickeManarin/ScreenToGIF) — Records the screen, webcam or board into an editable GIF with a built-in frame editor. **Open source · Windows-focused.**
+- [Vertov](https://github.com/ankurmans/vertov-screen-recorder) — Record a screen in the browser, edit the recording by transcript and share a link. **Open source · self-hosting requires a Cloudflare account.**
 
 - [Owncast](https://owncast.online) — Self-hosted live streaming server with chat and alerts, an open-source alternative to Twitch. **Open source.**
 
