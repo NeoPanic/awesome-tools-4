@@ -1473,6 +1473,7 @@ Labels are applied conservatively. Where a tool's free access is ambiguous, the 
 
 - [Lynis](https://cisofy.com/lynis/) — Command-line security auditing tool that scans Linux and macOS hosts and reports hardening improvements. **Free · Open source · Local/offline · Community edition free; compliance reporting and enterprise support paid.**
 - [O&O ShutUp10](https://www.oo-software.com/en/shutup10) — Portable freeware that gathers Windows 10 and 11 privacy settings so telemetry and data sharing can be disabled. **Free · Local/offline · Apply at your own risk; paid Premium re-enforces settings after updates.**
+- [FCaptcha](https://github.com/WebDecoy/FCaptcha) — Run a CAPTCHA verifier for web forms on your own infrastructure and verify tokens on your application backend. **Open source · MIT, Docker or a supported runtime required for self-hosting.**
 
 ## Computer and Operating-System Utilities
 
